@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'sgv-common';
+    src:    url('fonts/sgv-common.eot?qip0we');
+    src:    url('fonts/sgv-common.eot?qip0we#iefix') format('embedded-opentype'),
+        url('fonts/sgv-common.ttf?qip0we') format('truetype'),
+        url('fonts/sgv-common.woff?qip0we') format('woff'),
+        url('fonts/sgv-common.svg?qip0we#sgv-common') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'sgv-common' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sgv-common-arrow-right:before {
+    content: "\e900";
+}
+.sgv-common-facebook:before {
+    content: "\e901";
+}
+.sgv-common-favicon:before {
+    content: "\e902";
+}
+.sgv-common-hopper:before {
+    content: "\e903";
+}
+.sgv-common-hopper-jeugdverblijf:before {
+    content: "\e904";
+}
+.sgv-common-hopper-winkel:before {
+    content: "\e905";
+}
+.sgv-common-instagram:before {
+    content: "\e906";
+}
+.sgv-common-scouts-en-gidsen-vlaanderen:before {
+    content: "\e907";
+}
+.sgv-common-twitter:before {
+    content: "\e908";
+}
+
