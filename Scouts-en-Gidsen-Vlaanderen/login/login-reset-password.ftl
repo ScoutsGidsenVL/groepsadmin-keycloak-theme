@@ -34,6 +34,7 @@
   <meta name="msapplication-wide310x150logo" content="https://static.scoutsengidsenvlaanderen.be/images/favicons/wide.png"/>
   <meta name="msapplication-square310x310logo" content="https://static.scoutsengidsenvlaanderen.be/images/favicons/large.png"/>
   
+  <link href="${url.resourcesPath}/css/style.css" rel="stylesheet" />
   <link href="${url.resourcesPath}/css/reset.css" rel="stylesheet" />
   <link href="${url.resourcesPath}/css/menubalk.css" rel="stylesheet" />
   <link href="${url.resourcesPath}/css/login.css" rel="stylesheet" />
@@ -63,6 +64,15 @@
     </div>
     <div id="login-form">
       <i class="sgv-common-scouts-en-gidsen-vlaanderen" id="logo"></i>
+      <#if message?has_content>
+            <div class="alert alert-${message.type}">
+                <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon}"></span></#if>
+                <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon}"></span></#if>
+                <#if message.type = 'error'><span class="${properties.kcFeedbackErrorIcon}"></span></#if>
+                <#if message.type = 'info'><span class="${properties.kcFeedbackInfoIcon}"></span></#if>
+                <span class="kc-feedback-text">${message.summary}</span>
+            </div>
+      </#if>
       <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
         <div>
           <label>Gebruikersnaam</label>
