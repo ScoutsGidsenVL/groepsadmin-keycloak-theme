@@ -85,6 +85,7 @@
       
       <div id="user-actions">
          <a href="${url.loginUrl}">Terug</a></span>
+         <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
       </div>
     </div>
   </div>

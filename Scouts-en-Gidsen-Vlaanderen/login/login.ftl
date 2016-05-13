@@ -105,9 +105,10 @@
         <#if realm.resetPasswordAllowed>
           <a href="${url.loginResetCredentialsUrl}">Wachtwoord vergeten?</a>
         </#if>
-      <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
+        <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
           <a href="${url.registrationUrl}">Registreer</a>
         </#if>
+          <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
       </div>
     </div>
   </div>
