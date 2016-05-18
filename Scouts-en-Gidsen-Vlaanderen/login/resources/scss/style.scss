@@ -1,0 +1,32 @@
+// Imports
+@import 'variables';
+
+// CSS
+.alert {
+  border: 2px solid $white;
+  border-radius: 5px;
+  color: $white;
+  display: block;
+  margin: 5px auto 23px;
+  padding: 5px;
+  text-align: center;
+  width: 320px;
+}
+
+
+
+.alert-succes {
+  background: $donker-groen;
+}
+
+.alert-warning {
+  background: $donker-geel;
+}
+
+.alert-error {
+  background: $bruin-rgb;
+}
+
+.alert-info {
+  background: $zeescouts-blauw;
+}
