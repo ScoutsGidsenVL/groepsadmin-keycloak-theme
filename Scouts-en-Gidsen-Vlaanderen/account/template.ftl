@@ -43,7 +43,7 @@
 
 		<link href="${url.resourcesPath}/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-		<link href="https://static.scoutsengidsenvlaanderen.be/include/FontScoutsEnGidsenVlaanderen/css/Scouts-en-Gidsen-Vlaanderen.css" rel="stylesheet">
+		<link href="https://static.scoutsengidsenvlaanderen.be/css/Scouts-en-Gidsen-Vlaanderen.css" rel="stylesheet">
 		<link href="${url.resourcesPath}/css/style.css" rel="stylesheet" />
 		<link href="${url.resourcesPath}/css/menubalk.css" rel="stylesheet" />
 
