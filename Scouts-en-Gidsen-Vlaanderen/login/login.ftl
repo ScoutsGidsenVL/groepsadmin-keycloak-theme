@@ -110,6 +110,14 @@
       </div>
     </div>
   </div>
+  	<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		var images = '${url.resourcesPath}/img/backgrounds/'
+		var image = Math.floor(Math.random() * (7 - 1 + 1)) + 1;
+
+		document.body.style.backgroundImage = "url('" + images + image + ".jpg')";
+	})
+	</script>
 </body>
 
 </html>
