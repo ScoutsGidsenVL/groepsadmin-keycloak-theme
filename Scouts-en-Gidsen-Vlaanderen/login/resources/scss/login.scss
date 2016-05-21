@@ -1,0 +1,142 @@
+// Imports
+// -----------------------------------
+@import 'variables';
+
+// Algemeen
+// -----------------------------------
+body {
+  background: url(https://www.scoutsengidsenvlaanderen.be/files/imagecache/fotoheader_5/fotoheader/20120701-15_pieterfillet_giverkamp-20.jpg) no-repeat fixed;
+  background-position-y: 50%;
+  background-position-x: 50%;
+  background-size: cover;
+  color: $white;
+  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+// Costum CSS
+// -----------------------------------
+#login-form {
+  background: $zwart;
+  height: 100%;
+  height: calc(100% - 30px);
+  padding-top: 15vh;
+  width: 425px;
+}
+
+.title {
+  display: block;
+  margin: 0 auto;
+  padding-top: 250px;
+  text-align: center;
+}
+
+label,
+.input-field,
+.btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.input-field {
+  background: $licht-zwart;
+  border: 2px solid $white;
+  border-radius: 5px;
+  color: $white;
+  margin-bottom: 23px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.input-field::-webkit-input-placeholder {
+  color: $grijs;
+}
+
+.input-field:focus,
+.input-field:active,
+.input-field:hover {
+  box-shadow: none;
+  outline: none;
+}
+
+label {
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn {
+  background: none;
+  border: 0;
+  border: 4px solid $licht-groen;
+  border-radius: 131px;
+  color: $licht-groen;
+  display: block;
+  font-size: 40px;
+  height: 50px;
+  text-align: center;
+  width: 50px;
+
+  // btn i
+  i {
+    display: block;
+    margin-left: -3px;
+    text-align: center;
+  }
+}
+
+.btn:focus,
+.btn:hover {
+  background: none;
+  border: 0;
+  border: 4px solid $kaki-groen;
+  box-shadow: none;
+  color: $kaki-groen;
+  outline: none;
+}
+
+.btn-text {
+  font-size: 18px;
+  padding: 5px 20px;
+  width: inherit;
+}
+
+#logo {
+  display: block;
+  font-size: 250px;
+  margin: 0 auto;
+  padding: 20px 20px 40px;
+  text-align: center;
+}
+
+#user-actions {
+  padding-top: 60px;
+  text-align: center;
+  width: 100%;
+
+  // #user-actions a
+  a {
+    color: $white;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #login-form {
+    height: calc(100% - 30px);
+    padding-top: 0;
+    width: 100%;
+  }
+
+  #logo {
+    display: block;
+    font-size: 30vh;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #user-actions {
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+}

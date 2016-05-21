@@ -1,0 +1,126 @@
+// Imports
+@import 'variables';
+
+// Costum css
+.menubalk {
+  background-color: $bruin;
+  font-size: 75%;
+  height: auto;
+  min-height: 25px;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 997;
+
+  // .menubalk li
+  li {
+    float: left;
+    line-height: 17px;
+    list-style-type: none;
+    margin: 2px 12px 0 0;
+  }
+
+  // .menubalk ul
+  ul {
+    margin: 0;
+    overflow: hidden;
+    padding: 2px 0;
+  }
+}
+
+.menubalk_content {
+  margin: 0 480px 0 280px;
+}
+
+.menubalk a:link,
+.menubalk a:visited,
+.menubalk a:hover,
+.menubalk a:active,
+.menubalk a:focus {
+  color: $white;
+  text-decoration: none;
+  transition: color .25s linear 0s;
+}
+
+.menubalk a:hover,
+.menubalk a:active,
+.menubalk a:focus {
+  color: $licht-groen;
+}
+
+.item_sgv a {
+  background: url('https://www.scoutsengidsenvlaanderen.be/files/algemeen/menubalk/balk_sprites_sgv.png') no-repeat;
+  display: inline-block;
+  height: 15px;
+  text-indent: -99999px;
+  width: 15px;
+}
+
+li.org a {
+  // 'font-weight: bold;' doesn't make it stand out.
+  font-weight: 800;
+}
+
+.item_facebook a,
+.item_twitter a {
+  background: no-repeat 0 -15px;
+  font-size: calc(15 * 6.25%);
+  height: auto;
+  margin: 0;
+  text-indent: 0;
+  width: 15px;
+}
+
+img.custom_logo_image.linked {
+  display: none;
+}
+
+.account {
+  color: $white;
+  position: absolute;
+  right: 280px;
+  top: 0;
+
+  // .account li
+  li {
+    margin-right: 6px;
+  }
+}
+
+.item_home a,
+.item_help a,
+.item_afmelden a {
+  background-image: url("https://www.scoutsengidsenvlaanderen.be/files/algemeen/menubalk/balk_sprite_account.png");
+  display: inline-block;
+  height: 20px;
+  margin-top: 2px;
+  position: relative;
+  text-indent: -99999px;
+  top: -4px;
+  width: 20px;
+}
+
+.item_home a {
+  background-position: -20px -20px;
+}
+
+.item_help a {
+  background-position: 0 -20px;
+}
+
+.item_afmelden a {
+  background-position: -40px -20px;
+}
+
+.menu-icon {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1150px) {
+  .menubalk_content {
+    margin: 0 0 0 20px;
+  }
+
+  .account {
+    right: 20px;
+  }
+}
