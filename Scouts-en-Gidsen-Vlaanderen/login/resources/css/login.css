@@ -9,6 +9,7 @@
    background: url(https://www.scoutsengidsenvlaanderen.be/files/imagecache/fotoheader_5/fotoheader/20120701-15_pieterfillet_giverkamp-20.jpg);
    background-repeat: no-repeat;
    background-position-y: 50%;
+   background-position-x: 50%;
    background-size: cover;
    background-attachment: fixed;
  }
