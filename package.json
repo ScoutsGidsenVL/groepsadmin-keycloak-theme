@@ -1,0 +1,29 @@
+{
+  "name": "groepsadmin-keycloak-theme",
+  "version": "1.0.0",
+  "description": "Keycloak theme voor Scouts en Gidsen Vlaanderen ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScoutsGidsenVL/groepsadmin-keycloak-theme.git"
+  },
+  "keywords": [
+    "keycloak",
+    "theme"
+  ],
+  "author": "Scouts en Gidsen Vlaanderen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ScoutsGidsenVL/groepsadmin-keycloak-theme/issues"
+  },
+  "homepage": "https://github.com/ScoutsGidsenVL/groepsadmin-keycloak-theme#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-help": "^1.6.1",
+    "gulp-less": "^3.1.0",
+    "gulp-lesshint": "^1.1.0",
+  }
+}

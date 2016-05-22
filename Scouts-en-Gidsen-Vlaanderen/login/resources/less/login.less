@@ -2,6 +2,7 @@
     * Algemeen
     * ---------------------------------------------
     */
+
 body {
   font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: white;
@@ -16,26 +17,30 @@ body {
     * Custom Css
     * -------------------------------------------------
     */
+
 #login-form {
   background: rgba(34, 34, 34, 0.4);
   height: 100%;
   width: 425px;
   padding-top: 15vh;
   box-sizing: border-box;
-  height: calc(75vh);
+  height: calc(100vh - 25px);
 }
+
 .title {
   padding-top: 250px;
   margin: 0 auto;
   display: block;
   text-align: center;
 }
+
 label,
 .input-field,
 .btn {
   margin: 0 auto;
   display: block;
 }
+
 .input-field {
   padding: 5px;
   background: rgba(219, 220, 218, 0.17);
@@ -45,19 +50,23 @@ label,
   margin-bottom: 23px;
   color: white;
 }
+
 .input-field::-webkit-input-placeholder {
   color: #B7B7B7;
 }
+
 .input-field:focus,
 .input-field:active,
 .input-field:hover {
   outline: none;
   box-shadow: none;
 }
+
 label {
   letter-spacing: 1px;
   text-align: center;
 }
+
 .btn {
   background: none;
   border: none;
@@ -70,13 +79,13 @@ label {
   text-align: center;
   display: block;
 }
-.btn i {
+.btn i{
   text-align: center;
   display: block;
   margin-left: -3px;
 }
-.btn:focus,
-.btn:hover {
+
+.btn:focus, .btn:hover{
   background: none;
   border: none;
   outline: none;
@@ -84,7 +93,7 @@ label {
   color: #748d26;
   border: 4px solid #748d26;
 }
-.btn-text {
+.btn-text{
   width: inherit;
   font-size: 18px;
   padding: 5px;
@@ -102,19 +111,26 @@ label {
   text-align: center;
   display: block;
 }
+
 #user-actions {
   padding-top: 60px;
   width: 100%;
   text-align: center;
 }
-#user-actions a {
+
+#user-actions a{
   color: #fff;
+
 }
+
+
+
+
 @media only screen and (max-width: 425px) {
   #login-form {
     width: 100%;
     padding-top: 0;
-    height: calc(70%);
+    height: calc(100% - 30px);
   }
   #logo {
     font-size: 30vh;
@@ -127,4 +143,5 @@ label {
     width: 100%;
     text-align: center;
   }
+
 }
