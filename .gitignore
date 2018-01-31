@@ -1,2 +1,4 @@
 /base/
 /keycloak/
+/node_modules
+/Scouts-en-Gidsen-Vlaanderen/login/resources/bower_components

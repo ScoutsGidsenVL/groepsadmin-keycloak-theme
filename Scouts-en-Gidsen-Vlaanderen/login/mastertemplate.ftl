@@ -45,7 +45,7 @@
 	<link rel="stylesheet" href="${url.resourcesPath}/lib/sgv-common/sgv-common.css">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
+	<#nested "css">
 
 </head>
 
@@ -65,7 +65,16 @@
 				</ul>
 			</div>
 		</div>
-        <#nested "content">
+		<section id="content">
+			<#nested "content">
+		</section>
+		<section id="action">
+			<#nested "action">
+		</section>
+		<section id="reaction">
+			<#nested "reaction">
+		</section>
+	<#nested "scripts">
     <script type="text/javascript">
 	    document.addEventListener("DOMContentLoaded", function(event) { 
 		var images = '${url.resourcesPath}/img/backgrounds/'

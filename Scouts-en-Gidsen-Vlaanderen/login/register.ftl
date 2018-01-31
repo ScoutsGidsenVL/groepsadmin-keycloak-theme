@@ -15,35 +15,41 @@
         </div>
     </#if>
     <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
-        
-        <div>
-            <label>Voornaam</label>
-            <input id="username" class="input-field" name="username" type="text" autofocus placeholder="Uw gebruikersaam" />
-        </div>
-        <div>
-            <label>Achternaam</label>
-            <input id="phone-email" class="input-field" name="phone-email" type="text" autofocus placeholder="GSM / e-mail" />
-        </div>
-        <div>
-            <label>Lidnummer</label>
-            <input id="phone-email" class="input-field" name="phone-email" type="text" autofocus placeholder="GSM / e-mail" />
-        </div>
-        <div>
-            <label>E-mailadres</label>
-            <input id="phone-email" class="input-field" name="phone-email" type="text" autofocus placeholder="GSM / e-mail" />
-        </div>
-        <div>
-            <label>Gebruikersnaam</label>
-            <input id="phone-email" class="input-field" name="phone-email" type="text" autofocus placeholder="GSM / e-mail" />
-        </div>
-        <div>
-            <label>wachtwoord</label>
-            <input id="phone-email" class="input-field" name="phone-email" type="text" autofocus placeholder="GSM / e-mail" />
-        </div>
-        <div>
-            <label>wachtwoordcontrole</label>
-            <input id="phone-email" class="input-field" name="phone-email" type="text" autofocus placeholder="GSM / e-mail" />
-        </div>
+        <section class="regist-sub-section">
+            <h2>Persoonlijke identitficatie</h2>
+            <div>
+                <label>Voornaam</label>
+                <input id="username" class="input-field" name="username" type="text" autofocus placeholder="Uw gebruikersaam" />
+            </div>
+            <div>
+                <label>Achternaam</label>
+                <input id="phone-email" class="input-field" name="phone-email" type="text" autofocus placeholder="GSM / e-mail" />
+            </div>
+            <div>
+                <label>Lidnummer</label>
+                <input id="phone-email" class="input-field" name="phone-email" type="text" autofocus placeholder="GSM / e-mail" />
+                <p></p>
+            </div>
+        </section>
+        <section class="regist-sub-section">
+            <h2>Account</h2>
+            <div>
+                <label>E-mailadres</label>
+                <input id="phone-email" class="input-field" name="phone-email" type="text" autofocus placeholder="GSM / e-mail" />
+            </div>
+            <div>
+                <label>Gebruikersnaam</label>
+                <input id="phone-email" class="input-field" name="phone-email" type="text" autofocus placeholder="GSM / e-mail" />
+            </div>
+            <div>
+                <label>wachtwoord</label>
+                <input id="phone-email" class="input-field" name="phone-email" type="text" autofocus placeholder="GSM / e-mail" />
+            </div>
+            <div>
+                <label>wachtwoordcontrole</label>
+                <input id="phone-email" class="input-field" name="phone-email" type="text" autofocus placeholder="GSM / e-mail" />
+            </div>
+        </section>
         <button class="btn btn-text">
             Account aanmaken
         </button>

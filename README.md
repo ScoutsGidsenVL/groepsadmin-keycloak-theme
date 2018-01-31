@@ -6,9 +6,15 @@ Het standaard Keycloak thema wordt namelijk gebruikt voor het admin gedeelte op 
 Nadat het clonen geslaagd is kunnen deze terug geplaatst worden. Voeg deze toe aan de `.gitignore`-file zodat ze niet in deze repo belanden.
 
 ### Keycloak server
-Keycloak kan geinstaleerd worden a.d.h.v. volgende handleiding.
-<http://keycloak.github.io/docs/userguide/keycloak-server/html/server-installation.html#server_install>
+Keycloak kan geinstaleerd worden a.d.h.v. volgende [handleiding](http://www.keycloak.org/docs/latest/server_installation/index.html).
 
 ### Gebruik
 Om dit thema in te stellen als login thema navigeer je in de admin console naar jouw realm settings en kies daar voor het tabblad themes.
 Met behulp van de select-lists kan je het thema instellen bij de verschillende onderdelen.
+
+
+
+
+
+
+ 

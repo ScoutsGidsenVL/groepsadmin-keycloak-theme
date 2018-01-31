@@ -21,7 +21,7 @@
 			</div>
 			<div>
 				<label>GSM-nummer of e-mailadres</label>
-				<input id="phone-email" class="input-field" name="phone-email" type="text" autofocus placeholder="GSM / e-mail" />
+				<input id="email" class="input-field" name="email" type="text" autofocus placeholder="GSM / e-mail" />
 			</div>
 			<button class="btn btn-text">
 				Nieuw wachtwoord aanvragen
@@ -29,7 +29,7 @@
 		</form>
 
 		<div id="user-actions">
-			<a href="${url.loginUrl}">Gebruikersnaam vergeten?</a></span>
+			<a href="">Gebruikersnaam vergeten?</a></span>
 			<a href="${url.loginUrl}">Terug</a></span>
 			<a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
 		</div>
