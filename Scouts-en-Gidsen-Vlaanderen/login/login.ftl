@@ -3,9 +3,7 @@
 <#--  include Content  -->
 <@layout.mainLayout ;section>
  <#if section = "content">
-<div id="login-form">
-  <i class="sgv-common-scouts-en-gidsen-vlaanderen" id="logo"></i>
-  <#if message?has_content>
+   <#if message?has_content>
         <div class="alert alert-${message.type}">
             <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon}"></span></#if>
             <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon}"></span></#if>
@@ -49,7 +47,7 @@
     </#if>
       <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
   </div>
-</div>
-</div>
+  <#elseif section = "action">
+  <#elseif section = "reaction">
  </#if>
 </@layout.mainLayout>

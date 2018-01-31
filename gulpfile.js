@@ -27,7 +27,7 @@ gulp.task('compress', function (cb) {
   pump([
         gulp.src('src/login/js/**/*.js'),
         uglify(),
-        gulp.dest('Scouts-en-Gidsen-Vlaanderen/login/recources/js')
+        gulp.dest('Scouts-en-Gidsen-Vlaanderen/login/resources/js')
     ],
     cb
   );

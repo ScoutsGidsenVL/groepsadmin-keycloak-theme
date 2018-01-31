@@ -1,3 +1,5 @@
+#!/bin/bash
+
 npm install
 npm install bower -g
 npm install gulp -g

@@ -65,16 +65,24 @@
 				</ul>
 			</div>
 		</div>
-		<section id="content">
-			<#nested "content">
-		</section>
-		<section id="action">
-			<#nested "action">
-		</section>
-		<section id="reaction">
-			<#nested "reaction">
-		</section>
+		<div id="login-form">
+			<i class="sgv-common-scouts-en-gidsen-vlaanderen" id="logo"></i>
+			<section id="content">
+				<#nested "content">
+			</section>
+			<section id="action">
+				<#nested "action">
+			</section>
+			<section id="reaction">
+				<#nested "reaction">
+			</section>
+		</div>
+	</div>
 	<#nested "scripts">
+	<script src="${url.resourcesPath}/bower_components/jquery/dist/jquery.min.js"
+        type="text/javascript"></script>
+	<script src="${url.resourcesPath}/js/action-reaction.js"
+        type="text/javascript"></script>
     <script type="text/javascript">
 	    document.addEventListener("DOMContentLoaded", function(event) { 
 		var images = '${url.resourcesPath}/img/backgrounds/'
