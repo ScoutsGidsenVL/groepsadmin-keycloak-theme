@@ -1,0 +1,21 @@
+{
+  "name": "groepsadmin-keycloak-theme",
+  "description": "Keyloack theme for Scouts en Gidsen Vlaanderen",
+  "main": "index.js",
+  "authors": [
+    "Daan Zwaenepoel - Scouts en Gidsen Vlaanderen"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ScoutsGidsenVL/groepsadmin-keycloak-theme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
