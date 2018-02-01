@@ -16,6 +16,9 @@ body {
         * Custom Css
         * -------------------------------------------------
         */
+#reaction {
+  display: none; }
+
 #login-form {
   background: rgba(34, 34, 34, 0.4);
   height: 100%;
