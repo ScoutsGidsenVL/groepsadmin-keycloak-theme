@@ -12,6 +12,20 @@ Keycloak kan geinstaleerd worden a.d.h.v. volgende [handleiding](http://www.keyc
 Om dit thema in te stellen als login thema navigeer je in de admin console naar jouw realm settings en kies daar voor het tabblad themes.
 Met behulp van de select-lists kan je het thema instellen bij de verschillende onderdelen.
 
+### Dev omgeving
+
+### Keycloak server chashe
+Om te verkomen dat tijdens het ontwikkelen van het keycloack theme telkens de server moet opnieuw opstarten is het beste om volgende var aan te passen in `./standalone/configuration/standalone.xml` zodat de template/theme niet meer worden gechashed. 
+
+```xml
+ <theme>
+    <staticMaxAge>-1</staticMaxAge>
+    <cacheThemes>false</cacheThemes>
+    <cacheTemplates>false</cacheTemplates>
+ </theme>
+```
+
+
 
 
 
