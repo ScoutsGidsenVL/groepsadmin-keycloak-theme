@@ -1,1 +1,181 @@
-body{font-family:"Open Sans",HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;color:#fff;background:url(https://www.scoutsengidsenvlaanderen.be/files/imagecache/fotoheader_5/fotoheader/20120701-15_pieterfillet_giverkamp-20.jpg);background-repeat:no-repeat;background-position-y:50%;background-position-x:50%;background-size:cover;background-attachment:fixed}#reaction{display:none}#login-form{background:rgba(34,34,34,.4);height:100%;width:425px;box-sizing:border-box}.title{padding-top:250px;margin:0 auto;display:block;text-align:center}.btn,.input-field,label{margin:0 auto;display:block}.input-field{padding:5px;background:rgba(219,220,218,.17);border:2px solid #fff;border-radius:5px;margin-top:5px;margin-bottom:23px;color:#fff}.input-field::-webkit-input-placeholder{color:#b7b7b7}.input-field:active,.input-field:focus,.input-field:hover{outline:0;box-shadow:none}label{letter-spacing:1px;text-align:center}.btn{background:0 0;border:none;color:#bdd732;font-size:40px;border:4px solid #bdd732;border-radius:131px;width:50px;height:50px;text-align:center;display:block}.btn i{text-align:center;display:block;margin-left:-3px}.btn:focus,.btn:hover{background:0 0;border:none;outline:0;box-shadow:none;color:#748d26;border:4px solid #748d26}.btn-text{width:inherit;font-size:18px;padding:5px;padding-left:20px;padding-right:20px}#logo{display:block;margin:0 auto}#logo{font-size:250px;padding:20px;padding-bottom:40px;text-align:center;display:block}#user-actions{padding-top:60px;padding-bottom:30px;width:100%;text-align:center}#user-actions a{color:#fff}.regist-sub-section h2{text-align:center;letter-spacing:1px;font-size:22px;padding-bottom:16px}@media only screen and (max-width:425px){#login-form{width:100%;padding-top:0}#logo{font-size:30vh;padding:20px;text-align:center;display:block}#user-actions{padding-top:30px;padding-bottom:30px;width:100%;text-align:center}}
+/*
+     * Algemeen
+     * ---------------------------------------------
+     */
+body {
+  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: white;
+  background: url(https://www.scoutsengidsenvlaanderen.be/files/imagecache/fotoheader_5/fotoheader/20120701-15_pieterfillet_giverkamp-20.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0; }
+
+/*
+        * Custom Css
+        * -------------------------------------------------
+        */
+#reaction {
+  display: none; }
+
+#content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  background: rgba(34, 34, 34, 0.4);
+  min-height: 100%;
+  width: 425px;
+  height: 97.5vh;
+  box-sizing: border-box; }
+
+.title {
+  padding-top: 250px;
+  margin: 0 auto;
+  display: block;
+  text-align: center; }
+
+.center {
+  text-align: center; }
+
+.passLabel {
+  position: relative;
+  width: 157px;
+
+}
+
+.passLabel::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url("../img/eye.svg") center/contain no-repeat;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+label,
+.input-field,
+.btn {
+  margin: 0 auto;
+  display: block; }
+
+.input-field {
+  padding: 5px;
+  background: rgba(219, 220, 218, 0.17);
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 23px;
+  color: white; }
+
+.input-field::-webkit-input-placeholder {
+  color: #B7B7B7; }
+
+.input-field:focus,
+.input-field:active,
+.input-field:hover {
+  outline: none;
+  box-shadow: none; }
+
+label {
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.btn-login-container {
+  width: 50px; }
+
+.btn {
+  background: none;
+  border: none;
+  color: #bdd732;
+  font-size: 40px;
+  border: 4px solid #bdd732;
+  border-radius: 131px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: block; }
+
+.btn i {
+  text-align: center;
+  display: block;
+  margin-left: -3px; }
+
+.btn:focus, .btn:hover {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #748d26;
+  border: 4px solid #748d26; }
+
+.btn-text {
+  width: inherit;
+  font-size: 18px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+#logo {
+  display: block;
+  margin: 0 auto; }
+
+#logo {
+  font-size: 250px;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  display: block; }
+
+#user-actions {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  width: 100%;
+  text-align: center; }
+
+#user-actions a {
+  color: #fff; }
+
+.regist-sub-section h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 22px;
+  padding-bottom: 16px; }
+
+@media only screen and (max-width: 425px) {
+  #login-form {
+    width: 100%;
+    padding-top: 0; }
+  #logo {
+    font-size: 30vh;
+    padding: 20px;
+    text-align: center;
+    display: block; }
+  #user-actions {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: center; } }
+
+    @media only screen and (max-width: 540px) {
+      #login-form{
+        height: 95vh;
+      }
+    
+    }
+@media only screen and (max-width: 405px) {
+  #login-form {
+    height: 93vh;
+  }
+
+}

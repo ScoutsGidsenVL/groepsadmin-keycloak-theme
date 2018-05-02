@@ -13,48 +13,31 @@
         </div>
     </#if>
     <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
+        
         <section class="regist-sub-section">
-            <h2>Persoonlijke identitficatie</h2>
+            <h2>Contact info</h2>
             <div>
-                <label>Voornaam</label>
-                <input id="firstname" class="input-field" name="username" type="text" autofocus placeholder="Voornaam" />
+                <label>E-mailadres*</label>
+                <input id="email" class="input-field" name="email" type="text" autofocus placeholder="e-mail"   value="${(register.formData.email!'')?html}"/>
             </div>
-            <div>
-                <label>Achternaam</label>
-                <input id="lastname" class="input-field" name="Lastname" type="text" autofocus placeholder="Achternaam" />
-            </div>
-            <div>
-                <label>Lidnummer</label>
-                <input id="user-id" class="input-field" name="phone-email" type="text" autofocus placeholder="Lidnummer" />
-                <p></p>
+             <div>
+                <label>GSM nummer</label>
+                <input id="gsm" class="input-field input-phone" name="gsm" type="text" autofocus placeholder="gsm nummer"   value="${(register.formData.gsm!'')?html}"/>
             </div>
         </section>
-        <section class="regist-sub-section">
-            <h2>Account</h2>
-            <div>
-                <label>E-mailadres</label>
-                <input id="email" class="input-field" name="phone-email" type="text" autofocus placeholder="e-mail" />
+          <#if recaptchaRequired??>
+            <div id="capatcha" class="form-group">
+                <div class="${properties.kcInputWrapperClass!}">
+                    <div class="g-recaptcha"  data-sitekey="${recaptchaSiteKey}"></div>
+                </div>
             </div>
-            <div>
-                <label>Gebruikersnaam</label>
-                <input id="username" class="input-field" name="phone-email" type="text" autofocus placeholder="Gebruikersnaam" />
-            </div>
-            <div>
-                <label>wachtwoord</label>
-                <input id="password" class="input-field" name="password" type="password" autofocus placeholder="Wachtwoord" />
-            </div>
-            <div>
-                <label>wachtwoordcontrole</label>
-                <input id="password-confirm" class="input-field" name="password-confirm" type="password" autofocus placeholder="Herhaal wachtwoord" />
-            </div>
-        </section>
+            </#if>
         <button class="btn btn-text">
             Account aanmaken
         </button>
     </form>
 
     <div id="user-actions">
-        <a href="${url.loginUrl}">Gebruikersnaam vergeten?</a></span>
         <a href="${url.loginUrl}">Terug</a></span>
         <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
     </div>

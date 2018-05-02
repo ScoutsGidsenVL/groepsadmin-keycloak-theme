@@ -1,1 +1,0 @@
-function showAction(){$("#reaction").hide(),$("#action").show()}function showReaction(){$("#action").hide(),$("#reaction").show()}showAction(),$("#showReaction").click(function(){showReaction()}),$("#showAction").click(function(){showAction()});

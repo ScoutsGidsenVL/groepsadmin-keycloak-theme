@@ -20,7 +20,9 @@
     </div>
     <div>
       <label>Wachtwoord</label>
-      <input id="password" class="input-field" name="password" type="password" autocomplete="off" placeholder="Uw wachtwoord" />
+      <label class="passLabel" id="passLabel">
+        <input id="password"  class="input-field password" name="password" type="password" autocomplete="off" placeholder="Uw wachtwoord" />
+      </label>
     </div>
     <#if realm.rememberMe && !usernameEditDisabled??>
         <div class="checkbox">

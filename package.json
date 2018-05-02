@@ -27,6 +27,7 @@
     "pump": "^3.0.0"
   },
   "dependencies": {
+    "cleave.js": "^1.3.3",
     "sass": "^1.0.0-beta.4"
   }
 }

@@ -40,13 +40,14 @@
 	<link href="${url.resourcesPath}/css/reset.css" rel="stylesheet" />
 	<link href="${url.resourcesPath}/css/menubalk.css" rel="stylesheet" />
 	<link href="${url.resourcesPath}/css/login.css" rel="stylesheet" />
+	<link href="${url.resourcesPath}/css/register.css" rel="stylesheet" />
 
 	<!-- include font-->
 	<link rel="stylesheet" href="${url.resourcesPath}/lib/sgv-common/sgv-common.css">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 	<#nested "css">
-
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -54,34 +55,36 @@
 		<div class="menubalk">
 			<div class="menubalk_content">
 				<ul id="items">
-					<li class="menu_item"><a href="https://www.scoutsengidsenvlaanderen.be/" class="menu-icon"><i class="sgv-common-favicon"></i></a></li>
-					<li class="menu_item "><a href="https://www.scoutsengidsenvlaanderen.be/">Scouts en Gidsen Vlaanderen</a></li>
-					<li class="menu_item hide-xs"><a href="http://www.hopper.be/winkel">Hopper Winkel</a></li>
-					<li class="menu_item hide-xs"><a href="http://www.hopper.be/jeugdverblijf">Hopper Jeugdverblijven</a></li>
+					<li class="menu_item"><a href="https://www.scoutsengidsenvlaanderen.be/"  target="_blank" class="menu-icon"><i class="sgv-common-favicon"></i></a></li>
+					<li class="menu_item "><a href="https://www.scoutsengidsenvlaanderen.be/" target="_blank">Scouts en Gidsen Vlaanderen</a></li>
+					<li class="menu_item hide-xs"><a href="http://www.hopper.be/winkel" target="_blank">Hopper Winkel</a></li>
+					<li class="menu_item hide-xs"><a href="http://www.hopper.be/jeugdverblijf" target="_blank">Hopper Jeugdverblijven</a></li>
 
-					<li><a href="https://www.facebook.com/scoutsengidsenvlaanderen" id="item_facebook" class="menu-icon" title="Facebook"><i class="sgv-common-facebook"></i></a></li>
-					<li><a href="https://twitter.com/ScoutsGidsenVL" id="item_twitter" class="menu-icon" title="Twitter"><i class="sgv-common-twitter"></i></a></li>
-					<li><a href="https://instagram.com/scoutsgidsenvl" id="item_instagram" class="menu-icon" title="Instagram"><i class="sgv-common-instagram"></i></a></li>
+					<li><a href="https://www.facebook.com/scoutsengidsenvlaanderen"  target="_blank" id="item_facebook" class="menu-icon" title="Facebook"><i class="sgv-common-facebook"></i></a></li>
+					<li><a href="https://twitter.com/ScoutsGidsenVL"  target="_blank" id="item_twitter" class="menu-icon" title="Twitter"><i class="sgv-common-twitter"></i></a></li>
+					<li><a href="https://instagram.com/scoutsgidsenvl"  target="_blank" id="item_instagram" class="menu-icon" title="Instagram"><i class="sgv-common-instagram"></i></a></li>
 				</ul>
 			</div>
 		</div>
 		<div id="login-form">
-			<i class="sgv-common-scouts-en-gidsen-vlaanderen" id="logo"></i>
-			<section id="content">
-				<#nested "content">
-			</section>
-			<section id="action">
-				<#nested "action">
-			</section>
-			<section id="reaction">
-				<#nested "reaction">
-			</section>
+			<diV id="content-container">
+				<i class="sgv-common-scouts-en-gidsen-vlaanderen" id="logo"></i>
+				<section id="content">
+					<#nested "content">
+				</section>
+				
+
+			</div>
 		</div>
 	</div>
 	<#nested "scripts">
+	<script src="${url.resourcesPath}/js/cleave.js/dist/cleave.min.js"
+        type="text/javascript"></script>
+	<script src="${url.resourcesPath}/js/cleave.js/dist/addons/cleave-phone.be.js"
+        type="text/javascript"></script>
 	<script src="${url.resourcesPath}/bower_components/jquery/dist/jquery.min.js"
         type="text/javascript"></script>
-	<script src="${url.resourcesPath}/js/action-reaction.js"
+	<script src="${url.resourcesPath}/js/main.js"
         type="text/javascript"></script>
     <script type="text/javascript">
 	    document.addEventListener("DOMContentLoaded", function(event) { 
