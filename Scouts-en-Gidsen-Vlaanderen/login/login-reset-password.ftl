@@ -16,11 +16,11 @@
 			<form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
 				<div>
 					<label>Gebruikersnaam</label>
-					<input id="username" class="input-field" name="username" type="text" autofocus placeholder="Uw gebruikersaam"  value="${(formData.username?join("")!'')?html}" />
+					<input id="username" class="input-field" name="username" type="text" autofocus placeholder="Uw gebruikersaam"  value="${(formData.username?join("")!'')}" />
 				</div>
 				<div>
 					<label>GSM-nummer of e-mailadres</label>
-					<input id="email" class="input-field" name="email" type="text" autofocus placeholder="GSM / e-mail"   value="${(formData.email?join("")!'')?html}"/>
+					<input id="email" class="input-field" name="email" type="text" autofocus placeholder="GSM / e-mail"   value="${(formData.email?join("")!'')}"/>
 				</div>
 					<input id="action" name="action" type= "hidden" value="passRest"/>
 				<button class="btn btn-text">

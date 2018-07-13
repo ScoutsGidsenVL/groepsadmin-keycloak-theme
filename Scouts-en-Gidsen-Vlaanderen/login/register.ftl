@@ -18,11 +18,11 @@
             <h2>Contact info</h2>
             <div>
                 <label>E-mailadres*</label>
-                <input id="email" class="input-field" name="email" type="text" autofocus placeholder="e-mail"   value="${(register.formData.email!'')?html}"/>
+                <input id="email" class="input-field" name="email" type="text" autofocus placeholder="e-mail"   value="${(register.formData.email!'')}"/>
             </div>
              <div>
                 <label>GSM nummer</label>
-                <input id="gsm" class="input-field input-phone" name="gsm" type="text" autofocus placeholder="gsm nummer"   value="${(register.formData.gsm!'')?html}"/>
+                <input id="gsm" class="input-field input-phone" name="gsm" type="text" autofocus placeholder="gsm nummer"   value="${(register.formData.gsm!'')}"/>
             </div>
         </section>
           <#if recaptchaRequired??>

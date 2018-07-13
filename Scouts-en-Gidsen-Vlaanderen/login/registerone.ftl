@@ -19,17 +19,17 @@
        
             <div>
                 <label>Voornaam*</label>
-                <input id="firstname" class="input-field" name="firstname" type="text" autofocus placeholder="Voornaam"   value="${(formData.firstname?join("")!'')?html}"/>
+                <input id="firstname" class="input-field" name="firstname" type="text" autofocus placeholder="Voornaam"   value="${(formData.firstname?join("")!'')}"/>
             </div>
             <div>
                 <label>Achternaam*</label>
-                <input id="lastname" class="input-field" name="lastname" type="text" autofocus placeholder="Achternaam" value="${(formData.lastname?join("")!'')?html}" />
+                <input id="lastname" class="input-field" name="lastname" type="text" autofocus placeholder="Achternaam" value="${(formData.lastname?join("")!'')}" />
             </div>
             <div>
                 <div class="helpContainer">
                     <label class="helpLabel">Lidnummer*<a class="helpLink"  href="#">Daan</a></label>
                 </div>
-                <input id="lidnummer" class="input-field" name="lidnummer" type="text" autofocus placeholder="Lidnummer"  value="${(formData.lidnummer?join("")!'')?html}"/>
+                <input id="lidnummer" class="input-field" name="lidnummer" type="text" autofocus placeholder="Lidnummer"  value="${(formData.lidnummer?join("")!'')}"/>
                 <a   target="_blank" href="https://www.scoutsengidsenvlaanderen.be/groepen-zoeker" class="extraInfo">Ben je niet aangesloten bij Scouts en Gidsen Vlaanderen? Zoek een groep en wordt lid.</a>
             </div>
       

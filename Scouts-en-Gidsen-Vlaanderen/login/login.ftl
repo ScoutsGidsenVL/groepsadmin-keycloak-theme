@@ -15,7 +15,7 @@
   <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
     <div>
       <label>Gebruikersnaam</label>
-      <input id="username" class="input-field" name="username" value="${(login.username!'')?html}" type="text" autofocus placeholder="Uw gebruikersaam" />
+      <input id="username" class="input-field" name="username" value="${(login.username!'')}" type="text" autofocus placeholder="Uw gebruikersaam" />
 
     </div>
     <div>

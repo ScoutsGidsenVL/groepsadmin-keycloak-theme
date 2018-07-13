@@ -16,15 +16,15 @@
 			<form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
 				<div>
 					<label>Voornaam</label>
-					<input id="firstname" class="input-field" name="firstname" type="text" autofocus placeholder="Voornaam"  value="${(formData.firstname?join("")!'')?html}"/>
+					<input id="firstname" class="input-field" name="firstname" type="text" autofocus placeholder="Voornaam"  value="${(formData.firstname?join("")!'')}"/>
 				</div>
 				<div>
 					<label>Achternaam</label>
-					<input id="lastmame" class="input-field" name="lastname" type="text" autofocus placeholder="Achternaam"  value="${(formData.lastname?join("")!'')?html}" />
+					<input id="lastmame" class="input-field" name="lastname" type="text" autofocus placeholder="Achternaam"  value="${(formData.lastname?join("")!'')}" />
 				</div>
 				<div>
 				<label>email</label>
-					<input id="email" class="input-field" name="email" type="text" autofocus placeholder="GSM / e-mail"  value="${(formData.email?join("")!'')?html}" />
+					<input id="email" class="input-field" name="email" type="text" autofocus placeholder="GSM / e-mail"  value="${(formData.email?join("")!'')}" />
 				</div>
 				<input id="action" name="action" type= "hidden" value="getUsername"/>
 				<button class="btn btn-text">
