@@ -13,16 +13,16 @@
         </div>
     </#if>
     <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
-        
+
         <section class="regist-sub-section">
             <h2>Contact info</h2>
             <div>
                 <label>E-mailadres*</label>
-                <input id="email" class="input-field" name="email" type="text" autofocus placeholder="e-mail"   value="${(register.formData.email!'')}"/>
+                <input id="email" class="input-field" name="email" type="text" autofocus placeholder="E-mailadres"   value="${(register.formData.email!'')}"/>
             </div>
              <div>
-                <label>GSM nummer</label>
-                <input id="gsm" class="input-field input-phone" name="gsm" type="text" autofocus placeholder="gsm nummer"   value="${(register.formData.gsm!'')}"/>
+                <label>Gsm-nummer</label>
+                <input id="gsm" class="input-field input-phone" name="gsm" type="text" autofocus placeholder="Gsm-nummer" value="${(register.formData.gsm!'')}"/>
             </div>
         </section>
           <#if recaptchaRequired??>
@@ -38,9 +38,16 @@
     </form>
 
     <div id="user-actions">
-        <a href="${url.loginUrl}">Terug</a></span>
+        <a href="${url.loginUrl}">Terug</a>
         <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
     </div>
+
+    <script>
+      var cleave = new Cleave('.input-phone', {
+          phone: true,
+          phoneRegionCode: 'be'
+      });
+    </script>
 
  </#if>
 </@layout.mainLayout>

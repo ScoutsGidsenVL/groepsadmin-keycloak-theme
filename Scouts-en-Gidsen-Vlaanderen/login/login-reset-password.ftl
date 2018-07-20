@@ -35,8 +35,7 @@
 						Gebruikersnaam vergeten?
 					</button>
 				</form>
-				</span>
-				<a href="${url.loginUrl}">Terug</a></span>
+				<a href="${url.loginUrl}">Terug</a>
 				<a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
 			</div>
 		</#if>

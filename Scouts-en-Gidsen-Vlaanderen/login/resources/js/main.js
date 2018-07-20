@@ -25,8 +25,3 @@ $(window).click(function(event){
         $( ".modal" ).css("display","none");
     }
 });
-
-var cleave = new Cleave('.input-phone', {
-    phone: true,
-    phoneRegionCode: 'be'
-});

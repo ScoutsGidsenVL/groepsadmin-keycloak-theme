@@ -15,11 +15,10 @@
     <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
         <section class="regist-sub-section">
             <h2>Persoonlijke identitficatie</h2>
-        
-       
+
             <div>
                 <label>Voornaam*</label>
-                <input id="firstname" class="input-field" name="firstname" type="text" autofocus placeholder="Voornaam"   value="${(formData.firstname?join("")!'')}"/>
+                <input id="firstname" class="input-field" name="firstname" type="text" autofocus placeholder="Voornaam" value="${(formData.firstname?join("")!'')}"/>
             </div>
             <div>
                 <label>Achternaam*</label>
@@ -27,12 +26,12 @@
             </div>
             <div>
                 <div class="helpContainer">
-                    <label class="helpLabel">Lidnummer*<a class="helpLink"  href="#">Daan</a></label>
+                    <label class="helpLabel">Lidnummer*<a class="helpLink" href="#">Daan</a></label>
                 </div>
                 <input id="lidnummer" class="input-field" name="lidnummer" type="text" autofocus placeholder="Lidnummer"  value="${(formData.lidnummer?join("")!'')}"/>
-                <a   target="_blank" href="https://www.scoutsengidsenvlaanderen.be/groepen-zoeker" class="extraInfo">Ben je niet aangesloten bij Scouts en Gidsen Vlaanderen? Zoek een groep en wordt lid.</a>
+                <a target="_blank" href="https://www.scoutsengidsenvlaanderen.be/groepen-zoeker" class="extraInfo">Ben je niet aangesloten bij Scouts en Gidsen Vlaanderen? Zoek een groep en wordt lid.</a>
             </div>
-      
+
         </section>
         <button class="btn btn-text">
            Volgende
@@ -45,12 +44,11 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <p>Lidnummer help</p>
-            
         </div>
     </div>
 
     <div id="user-actions">
-          <a href="${url.loginUrl}">Terug</a></span>
+        <a href="${url.loginUrl}">Terug</a>
         <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
     </div>
 

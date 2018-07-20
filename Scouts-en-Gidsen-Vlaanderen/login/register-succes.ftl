@@ -12,7 +12,5 @@
         </button>
     </form>
     </div>
-    
-
  </#if>
 </@layout.mainLayout>
