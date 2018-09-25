@@ -4,7 +4,7 @@ pipeline {
   options {
     buildDiscarder(logRotator(artifactNumToKeepStr: '10'))
   }
-        
+
   stages {
     stage('build') {
       steps {
@@ -38,6 +38,12 @@ pipeline {
 
             artifactory.publishBuildInfo buildInfo
         }
+      }
+    }
+
+    stage('deploy') {
+      steps {
+        sh 'ssh lxc-deb-rundeck.vvksm.local sudo -u rundeck /opt/deploy-keycloak.sh ${BRANCH_NAME}'
       }
     }
   }
