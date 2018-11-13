@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/ScoutsGidsenVL/groepsadmin-keycloak-theme#readme",
   "devDependencies": {
-    "gulp": "3.9.1",
+    "gulp": "4.0.0",
     "gulp-clean-css": "3.10.0",
     "gulp-copy": "4.0.1",
     "gulp-legacy-ie-css-lint": "1.0.1",
-    "gulp-sass": "3.1.0",
+    "gulp-sass": "4.0.2",
     "gulp-uglify": "3.0.1",
     "pump": "3.0.0",
     "sass": "1.14.3"
