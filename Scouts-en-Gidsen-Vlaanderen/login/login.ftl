@@ -3,13 +3,48 @@
 <#--  include Content  -->
 <@layout.mainLayout ;section>
  <#if section = "content">
+
+  <#if realm.resetPasswordAllowed>
+    <script>
+      function loginResetCredentials(){
+        document.getElementById('loginResetCredentials').click();
+      }
+    </script>
+  <#else>
+   <style>
+     #loginResetCredentialerror{
+       display: none;
+     }
+   </style>
+  </#if>
+
+  <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
+    <script>
+       function registration(){
+        document.getElementById('registration').click();
+      }
+    </script>
+  <#else>
+   <style>
+     #registrationerror{
+       display: none;
+     }
+   </style>
+  </#if>
+
+
+ <script>
+  
+  </script>
+
+
    <#if message?has_content>
         <div class="alert alert-${message.type}">
             <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon}"></span></#if>
             <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon}"></span></#if>
             <#if message.type = 'error'><span class="${properties.kcFeedbackErrorIcon}"></span></#if>
             <#if message.type = 'info'><span class="${properties.kcFeedbackInfoIcon}"></span></#if>
-            <span class="kc-feedback-text">${message.summary}</span>
+            <span class="kc-feedback-text">${message.summary?no_esc}</span>
         </div>
   </#if>
   <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
@@ -42,10 +77,10 @@
   
   <div id="user-actions">
     <#if realm.resetPasswordAllowed>
-      <a href="${url.loginResetCredentialsUrl}">Wachtwoord vergeten?</a>
+      <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}">Wachtwoord vergeten?</a>
     </#if>
     <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
-      <a href="${url.registrationUrl}">Registreer</a>
+      <a id="registration" href="${url.registrationUrl}">Registreer</a>
     </#if>
       <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
   </div>

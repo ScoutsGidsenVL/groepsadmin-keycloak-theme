@@ -138,13 +138,17 @@ label {
   display: block; }
 
 #user-actions {
-  padding-top: 60px;
+  padding-top: 19px;
   padding-bottom: 30px;
   width: 100%;
   text-align: center; }
 
 #user-actions a {
-  color: #fff; }
+  color: #fff;
+  float: left;
+  width: 100%;
+  margin-bottom: 11px;
+}
 
 .regist-sub-section h2 {
   text-align: center;
