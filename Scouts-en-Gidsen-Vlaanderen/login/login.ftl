@@ -78,9 +78,13 @@
   <div id="user-actions">
     <#if realm.resetPasswordAllowed>
       <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}">Wachtwoord vergeten?</a>
+    <#else>
+      <a id="loginResetCredentials" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/nieuw-paswoord.jsp">Wachtwoord vergeten?</a>
     </#if>
     <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
       <a id="registration" href="${url.registrationUrl}">Registreer</a>
+    <#else>
+      <a id="registration" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/gebruiker-aanmaken">Registreer</a>
     </#if>
       <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
   </div>
