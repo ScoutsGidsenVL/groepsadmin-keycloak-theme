@@ -34,6 +34,16 @@ body {
   height: 97.5vh;
   box-sizing: border-box; }
 
+#kc-form-login > div {
+  margin: 0 auto;
+  width: 180px;
+}
+
+#login-form input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .title {
   padding-top: 250px;
   margin: 0 auto;
@@ -45,8 +55,6 @@ body {
 
 .passLabel {
   position: relative;
-  width: 157px;
-
 }
 
 .passLabel::after {
@@ -175,7 +183,7 @@ label {
       #login-form{
         height: 95vh;
       }
-    
+
     }
 @media only screen and (max-width: 405px) {
   #login-form {

@@ -34,24 +34,23 @@
 
 
  <script>
-  
+
   </script>
 
 
-   <#if message?has_content>
-        <div class="alert alert-${message.type}">
-            <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon}"></span></#if>
-            <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon}"></span></#if>
-            <#if message.type = 'error'><span class="${properties.kcFeedbackErrorIcon}"></span></#if>
-            <#if message.type = 'info'><span class="${properties.kcFeedbackInfoIcon}"></span></#if>
-            <span class="kc-feedback-text">${message.summary?no_esc}</span>
-        </div>
+  <#if message?has_content>
+    <div class="alert alert-${message.type}">
+      <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon}"></span></#if>
+      <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon}"></span></#if>
+      <#if message.type = 'error'><span class="${properties.kcFeedbackErrorIcon}"></span></#if>
+      <#if message.type = 'info'><span class="${properties.kcFeedbackInfoIcon}"></span></#if>
+      <span class="kc-feedback-text">${message.summary?no_esc}</span>
+    </div>
   </#if>
   <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
     <div>
       <label>Gebruikersnaam</label>
       <input id="username" class="input-field" name="username" value="${(login.username!'')}" type="text" autofocus placeholder="Uw gebruikersaam" />
-
     </div>
     <div>
       <label>Wachtwoord</label>
@@ -60,21 +59,21 @@
       </label>
     </div>
     <#if realm.rememberMe && !usernameEditDisabled??>
-        <div class="checkbox">
-            <label>
-                <#if login.rememberMe??>
-                    <input id="rememberMe" name="rememberMe" type="checkbox" tabindex="3" checked> ${msg("rememberMe")}
-                <#else>
-                    <input id="rememberMe" name="rememberMe" type="checkbox" tabindex="3"> ${msg("rememberMe")}
-                </#if>
-            </label>
-        </div>
+      <div class="checkbox">
+        <label>
+          <#if login.rememberMe??>
+            <input id="rememberMe" name="rememberMe" type="checkbox" tabindex="3" checked> ${msg("rememberMe")}
+          <#else>
+            <input id="rememberMe" name="rememberMe" type="checkbox" tabindex="3"> ${msg("rememberMe")}
+          </#if>
+        </label>
+      </div>
     </#if>
     <button class="btn">
       <i class="sgv-common-arrow-right"></i>
     </button>
   </form>
-  
+
   <div id="user-actions">
     <#if realm.resetPasswordAllowed>
       <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}">Wachtwoord vergeten?</a>
