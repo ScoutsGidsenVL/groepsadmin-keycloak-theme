@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/ScoutsGidsenVL/groepsadmin-keycloak-theme#readme",
   "devDependencies": {
-    "gulp": "4.0.0",
+    "gulp": "4.0.2",
     "gulp-clean-css": "3.10.0",
     "gulp-copy": "4.0.1",
     "gulp-legacy-ie-css-lint": "1.0.1",
