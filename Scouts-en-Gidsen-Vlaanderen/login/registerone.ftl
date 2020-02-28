@@ -29,7 +29,7 @@
                     <label class="helpLabel">Lidnummer*<a class="helpLink" href="#">Daan</a></label>
                 </div>
                 <input id="lidnummer" class="input-field" name="lidnummer" type="text" autofocus placeholder="Lidnummer"  value="${(formData.lidnummer?join("")!'')}"/>
-                <a target="_blank" href="https://www.scoutsengidsenvlaanderen.be/groepen-zoeker" class="extraInfo">Ben je niet aangesloten bij Scouts en Gidsen Vlaanderen? Zoek een groep en wordt lid.</a>
+                <a target="_blank" href="https://www.scoutsengidsenvlaanderen.be/groepen-zoeker" class="extraInfo">Ben je niet aangesloten bij Scouts en Gidsen Vlaanderen? Zoek een groep en word lid.</a>
             </div>
 
         </section>
