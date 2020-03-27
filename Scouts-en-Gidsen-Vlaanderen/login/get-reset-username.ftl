@@ -23,7 +23,7 @@
           <input id="lastmame" class="input-field" name="lastname" type="text" autofocus placeholder="Achternaam"  value="${(formData.lastname?join("")!'')}" />
         </div>
         <div>
-        <label>email</label>
+        <label>GSM/Email</label>
           <input id="email" class="input-field" name="email" type="text" autofocus placeholder="GSM / e-mail"  value="${(formData.email?join("")!'')}" />
         </div>
         <input id="action" name="action" type= "hidden" value="getUsername"/>
