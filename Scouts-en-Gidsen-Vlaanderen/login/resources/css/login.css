@@ -34,10 +34,12 @@ body {
   height: 97.5vh;
   box-sizing: border-box; }
 
-#kc-form-login > div {
+#kc-form-login > div, #kc-passwd-update-form > div {
   margin: 0 auto;
   width: 180px;
 }
+
+
 
 #login-form input {
   box-sizing: border-box;

@@ -14,14 +14,14 @@
             <input type="text" readonly value="this is not a login form" style="display: none;">
             <input type="password" readonly value="this is not a login form" style="display: none;">
 
-            <div class="${properties.kcFormGroupClass!}">
+            <div>
                 <label>wachtwoord*</label>
                 <label class="passLabel" id="passLabel">
                     <input id="password" class="input-field" name="password-new" type="password" autofocus placeholder="Wachtwoord"/>
                 </label>
             </div>
                   
-            <div class="${properties.kcFormGroupClass!}">
+            <div>
                   <label>wachtwoordcontrole*</label>
                 <label class="passLabel" id="passLabelconfirm">
                     <input id="password-confirm" class="input-field" name="password-confirm" type="password" autofocus placeholder="Herhaal wachtwoord" />
