@@ -18,16 +18,12 @@
   "homepage": "https://github.com/ScoutsGidsenVL/groepsadmin-keycloak-theme#readme",
   "devDependencies": {
     "gulp": "4.0.2",
-    "gulp-clean-css": "3.10.0",
     "gulp-copy": "4.0.1",
-    "gulp-legacy-ie-css-lint": "1.0.1",
-    "gulp-sass": "4.0.2",
     "gulp-uglify": "3.0.2",
-    "pump": "3.0.0",
-    "sass": "1.14.3"
+    "pump": "3.0.0"
   },
   "dependencies": {
     "bower": "1.8.8",
-    "cleave.js": "1.5.3"
+    "cleave.js": "1.5.10"
   }
 }
