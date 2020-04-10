@@ -20,11 +20,11 @@
         </div>
         <div>
           <label>Achternaam</label>
-          <input id="lastmame" class="input-field" name="lastname" type="text" autofocus placeholder="Achternaam"  value="${(formData.lastname?join("")!'')}" />
+          <input id="lastmame" class="input-field" name="lastname" type="text" autofocus placeholder="Achternaam" value="${(formData.lastname?join("")!'')}" />
         </div>
         <div>
-        <label>GSM/Email</label>
-          <input id="email" class="input-field" name="email" type="text" autofocus placeholder="GSM / e-mail"  value="${(formData.email?join("")!'')}" />
+        <label>E-mail of gsm-nummer</label>
+          <input id="email" class="input-field" name="email" type="text" autofocus placeholder="E-mail of gsm-nummer" value="${(formData.email?join("")!'')}" />
         </div>
         <input id="action" name="action" type= "hidden" value="getUsername"/>
         <button class="btn btn-text">

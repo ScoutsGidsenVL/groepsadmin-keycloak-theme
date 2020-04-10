@@ -20,7 +20,7 @@
                 <label>E-mailadres*</label>
                 <input id="email" class="input-field" name="email" type="text" autofocus placeholder="E-mailadres"   value="${(register.formData.email!'')}"/>
             </div>
-             <div>
+            <div>
                 <label>Gsm-nummer</label>
                 <input id="gsm" class="input-field input-phone" name="gsm" type="text" autofocus placeholder="Gsm-nummer" value="${(register.formData.gsm!'')}"/>
             </div>
