@@ -15,7 +15,7 @@
     <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
 
         <section class="regist-sub-section">
-            <h2>Contact info</h2>
+            <h2>Contactinfo</h2>
             <div>
                 <label>E-mailadres*</label>
                 <input id="email" class="input-field" name="email" type="text" autofocus placeholder="E-mailadres"   value="${(register.formData.email!'')}"/>

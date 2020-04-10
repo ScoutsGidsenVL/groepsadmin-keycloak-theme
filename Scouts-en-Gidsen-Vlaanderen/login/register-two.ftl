@@ -33,7 +33,7 @@
             </div>
         </section>
         <button class="btn btn-text">
-            Volgende
+            Volgende &gt;
         </button>
     </form>
 

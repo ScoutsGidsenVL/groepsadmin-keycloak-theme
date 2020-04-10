@@ -24,9 +24,9 @@ body {
   display: flex;
   flex-direction: column;
   background: rgba(34, 34, 34, 0.4);
-  min-height: 100%;
   width: 425px;
   height: calc(100% - 25px);
+  min-height: calc(100vh - 25px);
   box-sizing: border-box;
 }
 
