@@ -1,12 +1,12 @@
 <html>
 <body>
-<p>Beste ${user.firstName},</p>
+<p>Dag ${user.firstName},</p>
 
-<p>Met deze mail kan je je wachtwoord instellen voor de ${realmName} login.</p>
+<p>Met deze e-mail kan je je wachtwoord instellen voor de ${realmName} login.</p>
 
-<p>Aanmelden doe je met je lidnummer of gebruikersnaam ${user.username}
-en gebruik onderstaande wachwoord  om in te loggen op de groepsadminstratie en je wachtwoord opnieuw in te stellen.</p>
-<p>${link}</p>
+<p>Aanmelden doe je met je gebruikersnaam <b>${user.username}</b> of met je lidnummer.<br>
+Gebruik dit wachtwoord om in te loggen: <b>${link}</b><br>
+Daarna moet je je wachtwoord opnieuw in stellen.</p>
 
 <p>Veel plezier ermee.</p>
 </body>
