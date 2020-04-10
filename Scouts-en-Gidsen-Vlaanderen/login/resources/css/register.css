@@ -4,12 +4,10 @@
     width: 180px;
 }
 
-.helpContainer{
-    
-}
 .helpLabel{
     width: 157px;
 }
+
 .helpLink{
     display: block;
     float: right;
@@ -33,9 +31,8 @@
     text-decoration: none;
 }
 
-
- /* The Modal (background) */
- .modal {
+/* The Modal (background) */
+.modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -49,6 +46,12 @@
     color: black;
 }
 
+@media only screen and (max-width: 425px) {
+    .modal {
+        width: 100%;
+    }
+}
+
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
@@ -56,6 +59,14 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+}
+
+b {
+    font-weight: bold;
+}
+
+.modal a {
+    color: #748d26;
 }
 
 /* The Close Button */

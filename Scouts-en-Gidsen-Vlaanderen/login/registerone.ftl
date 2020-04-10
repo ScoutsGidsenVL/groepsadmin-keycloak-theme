@@ -26,10 +26,9 @@
             </div>
             <div>
                 <div class="helpContainer">
-                    <label class="helpLabel">Lidnummer*<a class="helpLink" href="#">Daan</a></label>
+                    <label class="helpLabel">Lidnummer*<a class="helpLink" href="#" tabindex="-1">?</a></label>
                 </div>
-                <input id="lidnummer" class="input-field" name="lidnummer" type="text" autofocus placeholder="Lidnummer"  value="${(formData.lidnummer?join("")!'')}"/>
-                <a target="_blank" href="https://www.scoutsengidsenvlaanderen.be/groepen-zoeker" class="extraInfo">Ben je niet aangesloten bij Scouts en Gidsen Vlaanderen? Zoek een groep en word lid.</a>
+                <input id="lidnummer" class="input-field" name="lidnummer" type="text" autofocus placeholder="Lidnummer" value="${(formData.lidnummer?join("")!'')}"/>
             </div>
 
         </section>
@@ -43,7 +42,9 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Lidnummer help</p>
+            <p>Je kan jouw lidnummer van 13 cijfers terugvinden op je <b>lidkaart</b> of op het <b>etiket</b> van een Krak?, Boem! of Over&Weer.<br>Of vraag het aan de <b>VGA</b> van je groep.</p>
+            <br>
+            <p>Iedereen die lid is van &eacute;&eacute;n van onze groepen krijgt een lidnummer.<br>Ben je nog niet aangesloten? <a href="https://www.scoutsengidsenvlaanderen.be/groepen-zoeker">Zoek een groep</a> en wordt lid!</p>
         </div>
     </div>
 
