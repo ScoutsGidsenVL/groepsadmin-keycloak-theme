@@ -8,7 +8,8 @@
   text-align: center;
   color: #FFFFFF;
   display: block;
-  width: 320px; }
+  width: 320px;
+}
 
 .link {
   color: #FFFFFF;
@@ -18,31 +19,40 @@
   vertical-align: baseline;
   padding: 0;
   margin: 0;
-  text-decoration: underline; }
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .alert-succes {
-  background: rgba(102, 175, 58, 0.43); }
+  background: rgba(102, 175, 58, 0.43);
+}
 
 .alert-warning {
-  background: rgba(218, 205, 35, 0.43); }
+  background: rgba(218, 205, 35, 0.43);
+}
 
 .alert-error {
-  background: rgba(162, 20, 20, 0.43); }
+  background: rgba(162, 20, 20, 0.43);
+}
 
 .alert-info {
-  background: rgba(20, 109, 162, 0.43); }
+  background: rgba(20, 109, 162, 0.43);
+}
+
 .linkText{
   color: #bdd732;
   text-decoration: none;
 }
+
 .subTitle{
   letter-spacing: 1px;
   font-size: 22px;
   padding-bottom: 16px;
 }
+
 .textError{
   margin: 0 15%;
-  display: block; 
+  display: block;
   text-align: center;
   width: 70%;
   letter-spacing: 1px;
