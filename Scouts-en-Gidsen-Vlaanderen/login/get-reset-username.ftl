@@ -33,10 +33,7 @@
       </form>
 
       <div id="user-actions">
-        <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
-          <input id="action" name="action" type= "hidden" value="passRest"/>
-          <button class= "link">Wachtwoord vergeten?</button>
-        </form>
+        <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=resetpassword">Wachtwoord vergeten?</a>
         <a href="${url.loginUrl}">Terug</a>
         <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
       </div>

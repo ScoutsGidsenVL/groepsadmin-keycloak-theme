@@ -1,6 +1,6 @@
 <html>
 <body>
-<p>Dag ${user.firstName},</p>
+<p>Beste ${user.firstName},</p>
 
 <p>Met deze e-mail kan je je wachtwoord instellen voor de ${realmName} login.</p>
 

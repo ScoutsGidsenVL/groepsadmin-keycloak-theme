@@ -32,12 +32,6 @@
    </style>
   </#if>
 
-
- <script>
-
-  </script>
-
-
   <#if message?has_content>
     <div class="alert alert-${message.type}">
       <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon}"></span></#if>
@@ -76,7 +70,8 @@
 
   <div id="user-actions">
     <#if realm.resetPasswordAllowed>
-      <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}">Wachtwoord vergeten?</a>
+      <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=getusername">Gebruikersnaam vergeten?</a>
+      <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=resetpassword">Wachtwoord vergeten?</a>
     <#else>
       <a id="loginResetCredentials" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/nieuw-paswoord.jsp">Wachtwoord vergeten?</a>
     </#if>
@@ -85,9 +80,9 @@
     <#else>
       <a id="registration" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/gebruiker-aanmaken">Registreer</a>
     </#if>
-      <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
+    <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
   </div>
-  <#elseif section = "action">
-  <#elseif section = "reaction">
+ <#elseif section = "action">
+ <#elseif section = "reaction">
  </#if>
 </@layout.mainLayout>
