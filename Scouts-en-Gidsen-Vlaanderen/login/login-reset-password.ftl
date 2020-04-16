@@ -30,7 +30,13 @@
 
       <div id="user-actions">
         <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=getusername">Wachtwoord vergeten?</a>
-        <a href="${url.loginUrl}">Terug</a>
+        <#if client??>
+          <#if client.baseUrl?has_content>
+            <a href="${client.baseUrl}">Terug</a>
+          <#else>
+            <a href="${url.loginUrl}">Terug</a>
+          </#if>
+        </#if>
         <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
       </div>
     </#if>
