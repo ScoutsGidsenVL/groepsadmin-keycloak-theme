@@ -22,7 +22,7 @@
           <label>E-mail of gsm-nummer</label>
           <input id="email" class="input-field" name="email" type="text" autofocus placeholder="E-mail of gsm-nummer" value="${(formData.email?join("")!'')}"/>
         </div>
-          <input id="action" name="action" type= "hidden" value="passRest"/>
+        <input id="action" name="action" type= "hidden" value="passRest"/>
         <button class="btn btn-text">
           Nieuw wachtwoord aanvragen
         </button>

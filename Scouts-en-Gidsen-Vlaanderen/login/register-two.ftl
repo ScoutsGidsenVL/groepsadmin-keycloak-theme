@@ -16,17 +16,17 @@
         <section class="regist-sub-section">
             <h2>Account</h2>
             <div>
-                <label>Gebruikersnaam*</label>
+                <label>Gebruikersnaam *</label>
                 <input id="username" class="input-field" name="username" type="text" autofocus placeholder="Gebruikersnaam" value="${(formData.username?join("")!'')}" />
             </div>
             <div>
-                <label>Wachtwoord*</label>
+                <label>Wachtwoord *</label>
                 <label class="passLabel" id="passLabel">
                     <input id="password" class="input-field" name="password" type="password" autofocus placeholder="Wachtwoord"/>
                 </label>
             </div>
             <div>
-                <label>Wachtwoordcontrole*</label>
+                <label>Wachtwoordcontrole *</label>
                 <label class="passLabel" id="passLabelconfirm">
                     <input id="password-confirm" class="input-field" name="password-confirm" type="password" autofocus placeholder="Herhaal wachtwoord" />
                 </label>

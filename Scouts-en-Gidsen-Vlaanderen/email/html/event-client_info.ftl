@@ -2,8 +2,8 @@
 <body>
 <p>Beste ${user.firstName},</p>
 
-<p>Aanmelden op de Groepsadminstratie kan je met gebruikersnaam: ${user.username}.</p>
+<p>Je kan aanmelden met je gebruikersnaam <b>${user.username}</b> op de websites van Scouts en Gidsen Vlaanderen.</p>
 
-<p>Veel plezier ermee.</p>
+<p>Veel plezier ermee</p>
 </body>
 </html>

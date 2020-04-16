@@ -15,29 +15,20 @@
             <input type="password" readonly value="this is not a login form" style="display: none;">
 
             <div>
-                <label>wachtwoord*</label>
+                <label>Wachtwoord *</label>
                 <label class="passLabel" id="passLabel">
                     <input id="password" class="input-field" name="password-new" type="password" autofocus placeholder="Wachtwoord"/>
                 </label>
             </div>
-                  
+
             <div>
-                  <label>wachtwoordcontrole*</label>
+                <label>Wachtwoordcontrole *</label>
                 <label class="passLabel" id="passLabelconfirm">
                     <input id="password-confirm" class="input-field" name="password-confirm" type="password" autofocus placeholder="Herhaal wachtwoord" />
                 </label>
             </div>
 
-            <div class="${properties.kcFormGroupClass!}">
-                <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
-                    <div class="${properties.kcFormOptionsWrapperClass!}">
-                    </div>
-                </div>
-
-                <button class="btn btn-text">
-                    Wachtwoord aanpassen
-                </button>
-            </div>
+            <button class="btn btn-text">Wachtwoord aanpassen</button>
         </form>
     </#if>
 </@layout.mainLayout>
