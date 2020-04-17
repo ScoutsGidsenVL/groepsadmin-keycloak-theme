@@ -44,12 +44,20 @@
   <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
     <div>
       <label>Gebruikersnaam</label>
-      <input id="username" class="input-field" name="username" value="${(login.username!'')}" type="text" autofocus placeholder="Gebruikersnaam of lidnummer" />
+      <input id="username" class="input-field" name="username" value="${(login.username!'')}" type="text" autofocus placeholder="Gebruikersnaam of lidnummer" tabindex="1" />
+      <#if realm.resetPasswordAllowed>
+        <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=getusername">Gebruikersnaam vergeten?</a>
+      </#if>
     </div>
     <div>
       <label>Wachtwoord</label>
       <label class="passLabel" id="passLabel">
-        <input id="password"  class="input-field password" name="password" type="password" autocomplete="off" placeholder="Wachtwoord" />
+        <input id="password"  class="input-field password" name="password" type="password" autocomplete="off" placeholder="Wachtwoord" tabindex="2"/>
+        <#if realm.resetPasswordAllowed>
+          <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=resetpassword">Wachtwoord vergeten?</a>
+        <#else>
+          <a id="loginResetCredentials" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/nieuw-paswoord.jsp">Wachtwoord vergeten?</a>
+        </#if>
       </label>
     </div>
     <#if realm.rememberMe && !usernameEditDisabled??>
@@ -63,28 +71,22 @@
         </label>
       </div>
     </#if>
-    <button class="btn">
+    <button class="btn" tabindex="3">
       <i class="sgv-common-arrow-right"></i>
     </button>
   </form>
 
   <div id="user-actions">
-    <#if realm.resetPasswordAllowed>
-      <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=getusername">Gebruikersnaam vergeten?</a>
-      <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=resetpassword">Wachtwoord vergeten?</a>
-    <#else>
-      <a id="loginResetCredentials" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/nieuw-paswoord.jsp">Wachtwoord vergeten?</a>
-    </#if>
+    <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:scoutsengidenvlaanderen_login" target="_blank">Help</a>
     <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
       <a id="registration" href="${url.registrationUrl}">Registreren</a>
     <#else>
       <a id="registration" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/gebruiker-aanmaken">Registreren</a>
     </#if>
     <#if client?? && client.baseUrl?has_content>
+      <br>
       <a href="${client.baseUrl}">Terug naar de website</a>
     </#if>
-    <br>
-    <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:scoutsengidenvlaanderen_login" target="_blank">Help</a>
   </div>
  <#elseif section = "action">
  <#elseif section = "reaction">

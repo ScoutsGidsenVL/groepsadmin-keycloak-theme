@@ -17,7 +17,7 @@
         <section class="regist-sub-section">
             <h2>Contactinfo</h2>
             <div>
-                <label>E-mailadres*</label>
+                <label>E-mailadres *</label>
                 <input id="email" class="input-field" name="email" type="text" autofocus placeholder="E-mailadres"   value="${(register.formData.email!'')}"/>
             </div>
             <div>
@@ -39,11 +39,11 @@
     </form>
 
     <div id="user-actions">
+        <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:scoutsengidenvlaanderen_login" target="_blank">Help</a>
         <#if client?? && client.baseUrl?has_content>
+            <br>
             <a href="${client.baseUrl}">Terug naar de website</a>
         </#if>
-        <br>
-        <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:scoutsengidenvlaanderen_login" target="_blank">Help</a>
     </div>
 
     <script>

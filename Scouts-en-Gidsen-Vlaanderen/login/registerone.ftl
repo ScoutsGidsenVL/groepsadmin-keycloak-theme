@@ -17,18 +17,18 @@
             <h2>Persoonlijke identitficatie</h2>
 
             <div>
-                <label>Voornaam*</label>
+                <label>Voornaam *</label>
                 <input id="firstname" class="input-field" name="firstname" type="text" autofocus placeholder="Voornaam" value="${(formData.firstname?join("")!'')}"/>
             </div>
             <div>
-                <label>Achternaam*</label>
+                <label>Achternaam *</label>
                 <input id="lastname" class="input-field" name="lastname" type="text" autofocus placeholder="Achternaam" value="${(formData.lastname?join("")!'')}" />
             </div>
             <div>
                 <div class="helpContainer">
-                    <label class="helpLabel">Lidnummer*<a class="helpLink" href="#" tabindex="-1">?</a></label>
+                    <label class="helpLabel">Lidnummer *<a class="helpLink" href="#" tabindex="-1">?</a></label>
                 </div>
-                <input id="lidnummer" class="input-field" name="lidnummer" type="text" autofocus placeholder="Lidnummer" value="${(formData.lidnummer?join("")!'')}"/>
+                <input id="lidnummer" class="input-field" name="lidnummer" type="text" autofocus placeholder="Lidnummer" value="${(formData.lidnummer?join("")!'')}" maxlength="13"/>
             </div>
 
         </section>
@@ -49,11 +49,14 @@
     </div>
 
     <div id="user-actions">
+        <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:scoutsengidenvlaanderen_login" target="_blank">Help</a>
+        <#if client??>
+            <a href="${url.loginUrl}">Inloggen</a>
+        </#if>
         <#if client?? && client.baseUrl?has_content>
+            <br>
             <a href="${client.baseUrl}">Terug naar de website</a>
         </#if>
-        <br>
-        <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:scoutsengidenvlaanderen_login" target="_blank">Help</a>
     </div>
 
  </#if>

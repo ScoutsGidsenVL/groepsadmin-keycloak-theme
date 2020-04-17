@@ -38,11 +38,11 @@
     </form>
 
     <div id="user-actions">
+        <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:scoutsengidenvlaanderen_login" target="_blank">Help</a>
         <#if client?? && client.baseUrl?has_content>
+            <br>
             <a href="${client.baseUrl}">Terug naar de website</a>
         </#if>
-        <br>
-        <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:scoutsengidenvlaanderen_login" target="_blank">Help</a>
     </div>
 
  </#if>
