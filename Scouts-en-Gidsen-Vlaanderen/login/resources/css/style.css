@@ -9,6 +9,8 @@
   color: #FFFFFF;
   display: block;
   width: 320px;
+  box-sizing: border-box;
+  max-width: 95vw;
 }
 
 .link {
@@ -32,7 +34,7 @@
 }
 
 .alert-error {
-  background: rgba(162, 20, 20, 0.43);
+  background: rgba(87, 38, 0, 0.8);
 }
 
 .alert-info {

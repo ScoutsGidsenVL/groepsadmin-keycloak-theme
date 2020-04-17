@@ -33,7 +33,7 @@ body {
 #kc-form-login > div,
 #kc-passwd-update-form > div {
   margin: 0 auto;
-  width: 190px;
+  width: 200px;
 }
 
 #login-form input {
@@ -80,8 +80,7 @@ label,
   background: rgba(219, 220, 218, 0.17);
   border: 2px solid white;
   border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom: 23px;
+  margin: 0.5rem 0 1rem;
   color: white;
 }
 
@@ -99,7 +98,6 @@ label,
 label {
   letter-spacing: 1px;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .btn-login-container {
@@ -117,6 +115,7 @@ label {
   height: 50px;
   text-align: center;
   display: block;
+  margin-top: 1.5rem;
 }
 
 .btn i {
@@ -145,29 +144,24 @@ label {
 #logo {
   display: block;
   margin: 0 auto;
-}
-
-#logo {
-  font-size: 250px;
-  padding: 20px;
-  padding-bottom: 40px;
+  font-size: min(23vh, 425px);
+  padding: 20px 0 calc(20px + 2vh);
   text-align: center;
   display: block;
 }
 
 #user-actions {
-  padding-top: 19px;
-  padding-bottom: 30px;
+  padding: 2rem 0;
   width: 100%;
   text-align: center;
 }
 
-#user-actions a,
-#user-actions form {
+#user-actions a {
+  display: block;
   color: #fff;
-  float: left;
   width: 100%;
   margin-bottom: 11px;
+  font-size: 90%;
 }
 
 .regist-sub-section h2 {
@@ -180,30 +174,8 @@ label {
 @media only screen and (max-width: 425px) {
   #login-form {
     width: 100%;
-    padding-top: 0;
-}
+  }
   #logo {
-    font-size: 30vh;
-    padding: 20px;
-    text-align: center;
-    display: block;
-}
-  #user-actions {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 540px) {
-  #login-form{
-    height: 95vh;
-  }
-}
-
-@media only screen and (max-width: 405px) {
-  #login-form {
-    height: 93vh;
+    font-size: 20vh;
   }
 }
