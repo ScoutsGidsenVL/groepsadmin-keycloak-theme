@@ -49,8 +49,11 @@
     </div>
 
     <div id="user-actions">
-        <a href="${url.loginUrl}">Terug</a>
-        <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
+        <#if client?? && client.baseUrl?has_content>
+            <a href="${client.baseUrl}">Terug naar de website</a>
+        </#if>
+        <br>
+        <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:scoutsengidenvlaanderen_login" target="_blank">Help</a>
     </div>
 
  </#if>

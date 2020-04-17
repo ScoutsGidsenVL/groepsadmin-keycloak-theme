@@ -7,7 +7,7 @@
         <p class="textError">Sorry we kunnen deze pagina niet vinden.</p>
         <#if client?? && client.baseUrl?has_content>
             <p class="textError">
-                Ga terug naar de <a class="linkText" href="${client.baseUrl}">loginpagina</a> en probeer opnieuw.
+                Ga <a class="linkText" href="${client.baseUrl}">terug naar de website</a> en probeer opnieuw.
             </p>
         </#if>
     </#if>

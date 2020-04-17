@@ -44,12 +44,12 @@
   <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
     <div>
       <label>Gebruikersnaam</label>
-      <input id="username" class="input-field" name="username" value="${(login.username!'')}" type="text" autofocus placeholder="Uw gebruikersaam" />
+      <input id="username" class="input-field" name="username" value="${(login.username!'')}" type="text" autofocus placeholder="Gebruikersnaam of lidnummer" />
     </div>
     <div>
       <label>Wachtwoord</label>
       <label class="passLabel" id="passLabel">
-        <input id="password"  class="input-field password" name="password" type="password" autocomplete="off" placeholder="Uw wachtwoord" />
+        <input id="password"  class="input-field password" name="password" type="password" autocomplete="off" placeholder="Wachtwoord" />
       </label>
     </div>
     <#if realm.rememberMe && !usernameEditDisabled??>
@@ -76,11 +76,15 @@
       <a id="loginResetCredentials" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/nieuw-paswoord.jsp">Wachtwoord vergeten?</a>
     </#if>
     <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
-      <a id="registration" href="${url.registrationUrl}">Registreer</a>
+      <a id="registration" href="${url.registrationUrl}">Registreren</a>
     <#else>
-      <a id="registration" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/gebruiker-aanmaken">Registreer</a>
+      <a id="registration" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/gebruiker-aanmaken">Registreren</a>
     </#if>
-    <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
+    <#if client?? && client.baseUrl?has_content>
+      <a href="${client.baseUrl}">Terug naar de website</a>
+    </#if>
+    <br>
+    <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:scoutsengidenvlaanderen_login" target="_blank">Help</a>
   </div>
  <#elseif section = "action">
  <#elseif section = "reaction">

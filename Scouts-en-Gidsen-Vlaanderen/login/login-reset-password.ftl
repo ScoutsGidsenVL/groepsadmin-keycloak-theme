@@ -16,7 +16,7 @@
       <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
         <div>
           <label>Gebruikersnaam</label>
-          <input id="username" class="input-field" name="username" type="text" autofocus placeholder="Uw gebruikersaam" value="${(formData.username?join("")!'')}" />
+          <input id="username" class="input-field" name="username" type="text" autofocus placeholder="Gebruikersnaam of lidnummer" value="${(formData.username?join("")!'')}" />
         </div>
         <div>
           <label>E-mail of gsm-nummer</label>
@@ -29,15 +29,15 @@
       </form>
 
       <div id="user-actions">
-        <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=getusername">Wachtwoord vergeten?</a>
         <#if client??>
-          <#if client.baseUrl?has_content>
-            <a href="${client.baseUrl}">Terug</a>
-          <#else>
-            <a href="${url.loginUrl}">Terug</a>
-          </#if>
+          <a href="${url.loginUrl}">Inloggen</a>
         </#if>
-        <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
+        <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=getusername">Wachtwoord vergeten?</a>
+        <#if client?? && client.baseUrl?has_content>
+          <a href="${client.baseUrl}">Terug naar de website</a>
+        </#if>
+        <br>
+        <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
       </div>
     </#if>
   </@layout.mainLayout>

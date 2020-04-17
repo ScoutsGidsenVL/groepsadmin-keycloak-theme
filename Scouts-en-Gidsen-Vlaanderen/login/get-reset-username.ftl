@@ -33,9 +33,20 @@
       </form>
 
       <div id="user-actions">
+        <#if client??>
+          <a href="${url.loginUrl}">Inloggen</a>
+        </#if>
         <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=resetpassword">Wachtwoord vergeten?</a>
-        <a href="${url.loginUrl}">Terug</a>
-        <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
+        <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
+          <a id="registration" href="${url.registrationUrl}">Registreren</a>
+        <#else>
+          <a id="registration" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/gebruiker-aanmaken">Registreren</a>
+        </#if>
+        <#if client?? && client.baseUrl?has_content>
+          <a href="${client.baseUrl}">Terug naar de website</a>
+        </#if>
+        <br>
+        <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
       </div>
     </#if>
   </@layout.mainLayout>
