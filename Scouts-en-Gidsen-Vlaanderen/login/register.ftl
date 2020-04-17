@@ -25,7 +25,8 @@
                 <input id="gsm" class="input-field input-phone" name="gsm" type="text" autofocus placeholder="Gsm-nummer" value="${(register.formData.gsm!'')}"/>
             </div>
         </section>
-          <#if recaptchaRequired??>
+        <#if recaptchaRequired??>
+            <script src='https://www.google.com/recaptcha/api.js'></script>
             <div id="capatcha" class="form-group">
                 <div class="${properties.kcInputWrapperClass!}">
                     <div class="g-recaptcha"  data-sitekey="${recaptchaSiteKey}"></div>
