@@ -52,7 +52,7 @@
     <div>
       <label>Wachtwoord</label>
       <label class="passLabel" id="passLabel">
-        <input id="password"  class="input-field password" name="password" type="password" autocomplete="off" placeholder="Wachtwoord" tabindex="2"/>
+        <input id="password" class="input-field password" name="password" type="password" autocomplete="off" placeholder="Wachtwoord" tabindex="2"/>
         <#if realm.resetPasswordAllowed>
           <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=resetpassword">Wachtwoord vergeten?</a>
         <#else>

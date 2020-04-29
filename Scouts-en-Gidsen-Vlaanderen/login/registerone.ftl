@@ -18,17 +18,17 @@
 
             <div>
                 <label>Voornaam *</label>
-                <input id="firstname" class="input-field" name="firstname" type="text" autofocus placeholder="Voornaam" value="${(formData.firstname?join("")!'')}"/>
+                <input id="firstname" class="input-field" name="firstname" type="text" autofocus placeholder="Voornaam" value="${(formData.firstname[0])!''}"/>
             </div>
             <div>
                 <label>Achternaam *</label>
-                <input id="lastname" class="input-field" name="lastname" type="text" autofocus placeholder="Achternaam" value="${(formData.lastname?join("")!'')}" />
+                <input id="lastname" class="input-field" name="lastname" type="text" autofocus placeholder="Achternaam" value="${(formData.lastname[0])!''}" />
             </div>
             <div>
                 <div class="helpContainer">
                     <label class="helpLabel">Lidnummer *<a class="helpLink" href="#" tabindex="-1">?</a></label>
                 </div>
-                <input id="lidnummer" class="input-field" name="lidnummer" type="text" autofocus placeholder="Lidnummer" value="${(formData.lidnummer?join("")!'')}" maxlength="13"/>
+                <input id="lidnummer" class="input-field" name="lidnummer" type="text" autofocus placeholder="Lidnummer" value="${(formData.lidnummer[0])!''}" maxlength="13"/>
             </div>
 
         </section>

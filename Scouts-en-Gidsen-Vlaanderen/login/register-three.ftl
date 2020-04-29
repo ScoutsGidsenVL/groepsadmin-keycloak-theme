@@ -18,18 +18,18 @@
             <h2>Contactinfo</h2>
             <div>
                 <label>E-mailadres *</label>
-                <input id="email" class="input-field" name="email" type="text" autofocus placeholder="E-mailadres"   value="${(formData.email?join("")!'')}"/>
+                <input id="email" class="input-field" name="email" type="text" autofocus placeholder="E-mailadres" value="${(formData.email[0])!''}"/>
             </div>
             <div>
                 <label>Gsm-nummer</label>
-                <input id="gsm" class="input-field input-phone" name="gsm" type="text" autofocus placeholder="Gsm-nummer" value="${(formData.gsm?join("")!'')}"/>
+                <input id="gsm" class="input-field input-phone" name="gsm" type="text" autofocus placeholder="Gsm-nummer" value="${(formData.gsm[0])!''}"/>
             </div>
         </section>
         <#if recaptchaRequired??>
             <script src='https://www.google.com/recaptcha/api.js'></script>
             <div id="capatcha" class="form-group">
                 <div class="${properties.kcInputWrapperClass!}">
-                    <div class="g-recaptcha"  data-sitekey="${recaptchaSiteKey}"></div>
+                    <div class="g-recaptcha" data-sitekey="${recaptchaSiteKey}"></div>
                 </div>
             </div>
         </#if>

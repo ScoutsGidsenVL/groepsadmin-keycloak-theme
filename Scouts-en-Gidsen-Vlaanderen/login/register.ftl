@@ -18,7 +18,7 @@
             <h2>Contactinfo</h2>
             <div>
                 <label>E-mailadres *</label>
-                <input id="email" class="input-field" name="email" type="text" autofocus placeholder="E-mailadres"   value="${(register.formData.email!'')}"/>
+                <input id="email" class="input-field" name="email" type="text" autofocus placeholder="E-mailadres" value="${(register.formData.email!'')}"/>
             </div>
             <div>
                 <label>Gsm-nummer</label>
@@ -29,7 +29,7 @@
             <script src='https://www.google.com/recaptcha/api.js'></script>
             <div id="capatcha" class="form-group">
                 <div class="${properties.kcInputWrapperClass!}">
-                    <div class="g-recaptcha"  data-sitekey="${recaptchaSiteKey}"></div>
+                    <div class="g-recaptcha" data-sitekey="${recaptchaSiteKey}"></div>
                 </div>
             </div>
         </#if>

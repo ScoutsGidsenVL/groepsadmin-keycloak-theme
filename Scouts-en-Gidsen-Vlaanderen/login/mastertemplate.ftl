@@ -1,4 +1,4 @@
-<#macro mainLayout bodyClass=""  >
+<#macro mainLayout bodyClass="">
 <!DOCTYPE html>
 <html>
 
@@ -53,14 +53,14 @@
     <div class="menubalk">
       <div class="menubalk_content">
         <ul id="items">
-          <li class="menu_item"><a href="https://www.scoutsengidsenvlaanderen.be/"  target="_blank" class="menu-icon"><i class="sgv-common-favicon"></i></a></li>
+          <li class="menu_item"><a href="https://www.scoutsengidsenvlaanderen.be/" target="_blank" class="menu-icon"><i class="sgv-common-favicon"></i></a></li>
           <li class="menu_item "><a href="https://www.scoutsengidsenvlaanderen.be/" target="_blank">Scouts en Gidsen Vlaanderen</a></li>
           <li class="menu_item hide-xs"><a href="http://www.hopper.be/winkel" target="_blank">Hopper Winkel</a></li>
           <li class="menu_item hide-xs"><a href="http://www.hopper.be/jeugdverblijf" target="_blank">Hopper Jeugdverblijven</a></li>
 
-          <li><a href="https://www.facebook.com/scoutsengidsenvlaanderen"  target="_blank" id="item_facebook" class="menu-icon" title="Facebook"><i class="sgv-common-facebook"></i></a></li>
-          <li><a href="https://twitter.com/ScoutsGidsenVL"  target="_blank" id="item_twitter" class="menu-icon" title="Twitter"><i class="sgv-common-twitter"></i></a></li>
-          <li><a href="https://instagram.com/scoutsgidsenvl"  target="_blank" id="item_instagram" class="menu-icon" title="Instagram"><i class="sgv-common-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/scoutsengidsenvlaanderen" target="_blank" id="item_facebook" class="menu-icon" title="Facebook"><i class="sgv-common-facebook"></i></a></li>
+          <li><a href="https://twitter.com/ScoutsGidsenVL" target="_blank" id="item_twitter" class="menu-icon" title="Twitter"><i class="sgv-common-twitter"></i></a></li>
+          <li><a href="https://instagram.com/scoutsgidsenvl" target="_blank" id="item_instagram" class="menu-icon" title="Instagram"><i class="sgv-common-instagram"></i></a></li>
         </ul>
       </div>
     </div>

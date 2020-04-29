@@ -17,7 +17,7 @@
             <h2>Account</h2>
             <div>
                 <label>Gebruikersnaam *</label>
-                <input id="username" class="input-field" name="username" type="text" autofocus placeholder="Gebruikersnaam" value="${(formData.username?join("")!'')}" />
+                <input id="username" class="input-field" name="username" type="text" autofocus placeholder="Gebruikersnaam" value="${(formData.username[0])!''}" />
             </div>
             <div>
                 <label>Wachtwoord *</label>
