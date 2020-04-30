@@ -6,7 +6,7 @@
             ${msg("editAccountHtmlTtile")}
         </div>
     </div>
-	
+
     <form action="${url.accountUrl}" class="form-horizontal" method="post">
 		<#if message?has_content>
 							<div class="alert alert-${message.type}">
@@ -15,7 +15,7 @@
 								${message.summary}
 							</div>
 						</#if>
-        <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker?html}">
+        <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
 
         <div class="form-group ${messagesPerField.printIfExists('username','has-error')}">
             <div class="col-sm-2 col-md-2">
