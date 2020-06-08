@@ -14,7 +14,7 @@
     </#if>
     <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
         <section class="regist-sub-section">
-            <h2>Persoonlijke identitficatie</h2>
+            <h2>Persoonlijke identificatie</h2>
 
             <div>
                 <label>Voornaam *</label>
