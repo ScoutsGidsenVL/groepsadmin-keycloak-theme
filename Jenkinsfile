@@ -11,8 +11,8 @@ pipeline {
         sh "rm -rf theme.zip"
         sh "npm --production prune"
         sh "npm --production install"
-        sh "node_modules/.bin/bower prune --production"
-        sh "node_modules/.bin/bower install --production"
+        sh "node_modules/bower/bin/bower prune --production"
+        sh "node_modules/bower/bin/bower install --production"
         sh "cp bower_components/cleave.js/dist/cleave.min.js bower_components/cleave.js/dist/addons/cleave-phone.be.js bower_components/jquery/dist/jquery.min.js Scouts-en-Gidsen-Vlaanderen/login/resources/js"
         sh "zip -r theme.zip Scouts-en-Gidsen-Vlaanderen"
       }
