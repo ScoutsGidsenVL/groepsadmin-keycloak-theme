@@ -3,6 +3,7 @@
 <#--  include Content  -->
 <@layout.mainLayout ;section>
 <#if section = "content">
+    <h2>Persoonlijke identificatie</h2>
     <#if message?has_content>
         <div class="alert alert-${message.type}">
             <#if message.type='success'><span class="${properties.kcFeedbackSuccessIcon}"></span></#if>
@@ -13,49 +14,27 @@
         </div>
     </#if>
     <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
-        <section class="regist-sub-section">
-            <h2>Persoonlijke identificatie</h2>
-
-            <div>
-                <label>Voornaam *</label>
-                <input id="firstname" class="input-field" name="firstname" type="text" autofocus placeholder="Voornaam" value="${(formData.firstname[0])!''}"/>
-            </div>
-            <div>
-                <label>Achternaam *</label>
-                <input id="lastname" class="input-field" name="lastname" type="text" autofocus placeholder="Achternaam" value="${(formData.lastname[0])!''}" />
-            </div>
-            <div>
-                <div class="helpContainer">
-                    <label class="helpLabel">Lidnummer *<a class="helpLink" href="#" tabindex="-1">?</a></label>
-                </div>
-                <input id="lidnummer" class="input-field" name="lidnummer" type="text" autofocus placeholder="Lidnummer" value="${(formData.lidnummer[0])!''}" maxlength="13"/>
-            </div>
-
-        </section>
-        <button class="btn btn-text">
-           Volgende &gt;
-        </button>
+        <input id="firstname" name="firstname" class="input-field" type="text" autofocus placeholder="Voornaam" value="${(formData.firstname[0])!''}"/>
+        <input id="lastname" name="lastname" class="input-field" type="text" autofocus placeholder="Achternaam" value="${(formData.lastname[0])!''}" />
+        <input id="lidnummer" name="lidnummer" class="input-field" type="text" autofocus placeholder="Lidnummer" value="${(formData.lidnummer[0])!''}" maxlength="13"/>
+        <div class="input-subtext">
+            <span class="help-link" tabindex="0">Waar vind ik het lidnummer?</span>
+        </div>
+        <button class="btn">Volgende</button>
     </form>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
+    <div class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <p>Je kan jouw lidnummer van 13 cijfers terugvinden op je <b>lidkaart</b> of op het <b>etiket</b> van een Krak?, Boem! of Over&Weer.<br>Of vraag het aan de <b>VGA</b> van je groep.</p>
             <br>
-            <p>Iedereen die lid is van &eacute;&eacute;n van onze groepen krijgt een lidnummer.<br>Ben je nog niet aangesloten? <a href="https://www.scoutsengidsenvlaanderen.be/groepen-zoeker">Zoek een groep</a> en wordt lid!</p>
+            <p>Iedereen die lid is van &eacute;&eacute;n van onze groepen krijgt een lidnummer.<br>Ben je nog niet aangesloten? <a href="https://www.scoutsengidsenvlaanderen.be/groepenzoeker">Zoek een groep</a> en wordt lid!</p>
         </div>
     </div>
 
-    <div id="user-actions">
-        <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:scoutsengidenvlaanderen_login" target="_blank">Help</a>
+    <div class="user-actions">
         <#if client??>
-            <a href="${url.loginUrl}">Inloggen</a>
-        </#if>
-        <#if client?? && client.baseUrl?has_content>
-            <br>
-            <a href="${client.baseUrl}">Terug naar de website</a>
+            <span>Heb je al een account? <a href="${url.loginUrl}">Klik hier om in te loggen.</a></span>
         </#if>
     </div>
 

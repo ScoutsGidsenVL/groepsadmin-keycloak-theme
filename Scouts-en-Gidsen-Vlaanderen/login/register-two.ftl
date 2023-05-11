@@ -3,6 +3,7 @@
 <#--  include Content  -->
 <@layout.mainLayout ;section>
 <#if section = "content">
+    <h2>Account</h2>
     <#if message?has_content>
         <div class="alert alert-${message.type}">
             <#if message.type='success'><span class="${properties.kcFeedbackSuccessIcon}"></span></#if>
@@ -13,37 +14,11 @@
         </div>
     </#if>
     <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
-        <section class="regist-sub-section">
-            <h2>Account</h2>
-            <div>
-                <label>Gebruikersnaam *</label>
-                <input id="username" class="input-field" name="username" type="text" autofocus placeholder="Gebruikersnaam" value="${(formData.username[0])!''}" />
-            </div>
-            <div>
-                <label>Wachtwoord *</label>
-                <label class="passLabel" id="passLabel">
-                    <input id="password" class="input-field" name="password" type="password" autofocus placeholder="Wachtwoord"/>
-                </label>
-            </div>
-            <div>
-                <label>Wachtwoordcontrole *</label>
-                <label class="passLabel" id="passLabelconfirm">
-                    <input id="password-confirm" class="input-field" name="password-confirm" type="password" autofocus placeholder="Herhaal wachtwoord" />
-                </label>
-            </div>
-        </section>
-        <button class="btn btn-text">
-            Volgende &gt;
-        </button>
+        <input class="input-field" id="username" name="username" type="text" autofocus placeholder="Gebruikersnaam" value="${(formData.username[0])!''}" />
+        <input class="input-field" id="password" name="password" type="password" autofocus placeholder="Wachtwoord"/>
+        <input class="input-field" id="password-confirm" name="password-confirm" type="password" autofocus placeholder="Herhaal wachtwoord" />
+        <button class="btn">Volgende</button>
     </form>
-
-    <div id="user-actions">
-        <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:scoutsengidenvlaanderen_login" target="_blank">Help</a>
-        <#if client?? && client.baseUrl?has_content>
-            <br>
-            <a href="${client.baseUrl}">Terug naar de website</a>
-        </#if>
-    </div>
 
  </#if>
 </@layout.mainLayout>

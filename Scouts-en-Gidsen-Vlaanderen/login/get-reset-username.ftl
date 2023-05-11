@@ -4,6 +4,7 @@
 
   <@layout.mainLayout ;section>
     <#if section = "content">
+      <h2>Gebruikersnaam vergeten?</h2>
       <#if message?has_content>
         <div class="alert alert-${message.type}">
           <#if message.type='success'><span class="${properties.kcFeedbackSuccessIcon}"></span></#if>
@@ -14,26 +15,16 @@
         </div>
       </#if>
       <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
-        <div>
-          <label>Voornaam</label>
-          <input id="firstname" class="input-field" name="firstname" type="text" autofocus placeholder="Voornaam" value="${(formData.firstname[0])!''}"/>
-        </div>
-        <div>
-          <label>Achternaam</label>
-          <input id="lastmame" class="input-field" name="lastname" type="text" autofocus placeholder="Achternaam" value="${(formData.lastname[0])!''}" />
-        </div>
-        <div>
-        <label>E-mail of gsm-nummer</label>
-          <input id="email" class="input-field" name="email" type="text" autofocus placeholder="E-mail of gsm-nummer" value="${(formData.email[0])!''}" />
-        </div>
+        <input id="firstname" name="firstname" class="input-field" type="text" autofocus placeholder="Voornaam" value="${(formData.firstname[0])!''}"/>
+        <input id="lastmame" name="lastname" class="input-field" type="text" autofocus placeholder="Achternaam" value="${(formData.lastname[0])!''}" />
+        <input id="email" name="email" class="input-field" type="text" autofocus placeholder="E-mail of gsm-nummer" value="${(formData.email[0])!''}" />
         <input id="action" name="action" type= "hidden" value="getUsername"/>
-        <button class="btn btn-text">
+        <button class="btn">
           Gebruikersnaam opvragen
         </button>
       </form>
 
-      <div id="user-actions">
-        <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:wachtwoord_vergeten" target="_blank">Help</a>
+      <div class="user-actions">
         <#if client??>
           <a href="${url.loginUrl}">Inloggen</a>
         </#if>
@@ -41,10 +32,6 @@
           <a id="registration" href="${url.registrationUrl}">Registreren</a>
         <#else>
           <a id="registration" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/gebruiker-aanmaken">Registreren</a>
-        </#if>
-        <#if client?? && client.baseUrl?has_content>
-          <br>
-          <a href="${client.baseUrl}">Terug naar de website</a>
         </#if>
       </div>
     </#if>

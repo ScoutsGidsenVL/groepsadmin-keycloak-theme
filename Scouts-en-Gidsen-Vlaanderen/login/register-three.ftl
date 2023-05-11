@@ -3,6 +3,7 @@
 <#--  include Content  -->
 <@layout.mainLayout ;section>
 <#if section = "content">
+    <h2>Contactinfo</h2>
     <#if message?has_content>
         <div class="alert alert-${message.type}">
             <#if message.type='success'><span class="${properties.kcFeedbackSuccessIcon}"></span></#if>
@@ -13,44 +14,27 @@
         </div>
     </#if>
     <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
-
-        <section class="regist-sub-section">
-            <h2>Contactinfo</h2>
-            <div>
-                <label>E-mailadres *</label>
-                <input id="email" class="input-field" name="email" type="text" autofocus placeholder="E-mailadres" value="${(formData.email[0])!''}"/>
-            </div>
-            <div>
-                <label>Gsm-nummer</label>
-                <input id="gsm" class="input-field input-phone" name="gsm" type="text" autofocus placeholder="Gsm-nummer" value="${(formData.gsm[0])!''}"/>
-            </div>
-        </section>
+        <div class="input-group">
+        <input class="input-field" id="email" name="email" type="text" autofocus placeholder="E-mailadres" value="${(formData.email[0])!''}"/>
+        <input class="input-field input-phone" id="gsm" name="gsm" type="text" autofocus placeholder="Gsm-nummer" value="${(formData.gsm[0])!''}"/>
         <#if recaptchaRequired??>
             <script src='https://www.google.com/recaptcha/api.js'></script>
-            <div id="capatcha" class="form-group">
+            <div id="capatcha">
                 <div class="${properties.kcInputWrapperClass!}">
                     <div class="g-recaptcha" data-sitekey="${recaptchaSiteKey}"></div>
                 </div>
             </div>
         </#if>
-        <button class="btn btn-text">
-            Account aanmaken
-        </button>
+        <button class="btn">Account aanmaken</button>
     </form>
 
-    <div id="user-actions">
-        <a href="https://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:scoutsengidenvlaanderen_login" target="_blank">Help</a>
-        <#if client?? && client.baseUrl?has_content>
-            <br>
-            <a href="${client.baseUrl}">Terug naar de website</a>
-        </#if>
-    </div>
-
     <script>
-      var cleave = new Cleave('.input-phone', {
-          phone: true,
-          phoneRegionCode: 'be'
-      });
+        document.addEventListener('DOMContentLoaded', () => {
+            const cleave = new Cleave('.input-phone', {
+                phone: true,
+                phoneRegionCode: 'be'
+            });
+        });
     </script>
 
  </#if>

@@ -3,14 +3,10 @@
 <#--  include Content  -->
 <@layout.mainLayout ;section>
 <#if section = "content">
+    <h2>Registratie geslaagd!</h2>
     <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
-    <div class="center">
-         <h2>Registratie geslaagd</h2>
-    <p> U Account is klaar voor gebruik</p>
-   <button class="btn btn-text">
-            Login
-        </button>
+        <p>Uw account is klaar voor gebruik</p>
+        <button class="btn">Inloggen</button>
     </form>
-    </div>
  </#if>
 </@layout.mainLayout>

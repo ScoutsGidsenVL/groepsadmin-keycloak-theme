@@ -16,7 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.3.1",
     "cleave.js": "^1.5.10"
   }
 }
