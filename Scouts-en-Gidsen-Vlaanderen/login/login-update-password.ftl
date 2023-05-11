@@ -11,24 +11,14 @@
 				</div>
 			</#if>
         <form id="kc-passwd-update-form" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
+            <!-- Snippet to disable browser autofill https://stackoverflow.com/a/23234498 -->
             <input type="text" readonly value="this is not a login form" style="display: none;">
             <input type="password" readonly value="this is not a login form" style="display: none;">
 
-            <div>
-                <label>Wachtwoord *</label>
-                <label class="passLabel" id="passLabel">
-                    <input id="password" class="input-field" name="password-new" type="password" autofocus placeholder="Wachtwoord"/>
-                </label>
-            </div>
+            <input class="input-field" id="password" class="input-field" name="password-new" type="password" autofocus placeholder="Wachtwoord"/>
+            <input class="input-field" id="password-confirm" class="input-field" name="password-confirm" type="password" autofocus placeholder="Herhaal wachtwoord" />
 
-            <div>
-                <label>Wachtwoordcontrole *</label>
-                <label class="passLabel" id="passLabelconfirm">
-                    <input id="password-confirm" class="input-field" name="password-confirm" type="password" autofocus placeholder="Herhaal wachtwoord" />
-                </label>
-            </div>
-
-            <button class="btn btn-text">Wachtwoord aanpassen</button>
+            <button class="btn">Wachtwoord aanpassen</button>
         </form>
     </#if>
 </@layout.mainLayout>

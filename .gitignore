@@ -2,4 +2,5 @@
 /keycloak/
 /node_modules
 /bower_components
-/Scouts-en-Gidsen-Vlaanderen/login/resources/bower_components
+/Scouts-en-Gidsen-Vlaanderen/login/resources/js/*.js
+!/Scouts-en-Gidsen-Vlaanderen/login/resources/js/main.js

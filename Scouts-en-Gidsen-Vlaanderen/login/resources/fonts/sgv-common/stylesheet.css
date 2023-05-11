@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'sgv-common';
-    src:    url('fonts/sgv-common.eot?qip0we');
-    src:    url('fonts/sgv-common.eot?qip0we#iefix') format('embedded-opentype'),
-        url('fonts/sgv-common.ttf?qip0we') format('truetype'),
-        url('fonts/sgv-common.woff?qip0we') format('woff'),
-        url('fonts/sgv-common.svg?qip0we#sgv-common') format('svg');
+    src:    url('sgv-common.eot?qip0we');
+    src:    url('sgv-common.eot?qip0we#iefix') format('embedded-opentype'),
+        url('sgv-common.ttf?qip0we') format('truetype'),
+        url('sgv-common.woff?qip0we') format('woff'),
+        url('sgv-common.svg?qip0we#sgv-common') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -51,4 +51,3 @@ i {
 .sgv-common-twitter:before {
     content: "\e908";
 }
-
