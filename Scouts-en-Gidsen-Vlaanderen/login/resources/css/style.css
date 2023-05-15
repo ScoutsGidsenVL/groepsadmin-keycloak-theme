@@ -83,7 +83,22 @@ a:hover, a:focus {
 .alert {
   margin: 5px auto;
   text-align: center;
-  color: rgb(190, 0, 0);
+}
+
+.alert-succes {
+  color: #318000;
+}
+
+.alert-warning {
+  color: #a77a00;
+}
+
+.alert-error {
+  color: #be0000;
+}
+
+.alert-info {
+  color: #00507e
 }
 
 .input-field {
