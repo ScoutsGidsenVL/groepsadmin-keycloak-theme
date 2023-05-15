@@ -68,7 +68,7 @@ main {
 h2 {
   text-align: center;
   font-size: 18px;
-  padding-bottom: 16px;
+  padding-bottom: 25px;
   color: var(--primary);
 }
 
@@ -168,11 +168,13 @@ a:hover, a:focus {
 .btn.btn-secondary {
   background-color: var(--secondary);
   color: var(--on-secondary);
+  padding: 6px 12px;
+  font-size: 17px;
 }
 
 form > .btn {
   display: block;
-  margin: 15px auto 0;
+  margin: 20px auto 0;
 }
 
 .input-checkbox {

@@ -13,9 +13,9 @@
       <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
         <input class="input-field" id="username" name="username" type="text" autofocus placeholder="Gebruikersnaam of lidnummer" value="${(formData.username[0])!''}" tabindex="1" />
         <#if realm.resetPasswordAllowed>
-          <span class="input-subtext">
+          <div class="input-subtext">
             <a href="${url.loginResetCredentialsUrl}&action=getusername">Gebruikersnaam vergeten?</a>
-          </span>
+          </div>
         </#if>
         <input class="input-field" id="email" name="email" type="text" autofocus placeholder="E-mail of gsm-nummer" value="${(formData.email[0])!''}" tabindex="2"/>
         <input id="action" name="action" type= "hidden" value="passRest"/>
