@@ -26,7 +26,7 @@
 
       <div class="user-actions">
         <#if client??>
-          <a href="${url.loginUrl}">Inloggen</a>
+          <a class="btn btn-secondary" href="${url.loginUrl}">Inloggen</a>
         </#if>
       </div>
     </#if>
