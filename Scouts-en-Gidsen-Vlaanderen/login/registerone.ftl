@@ -3,12 +3,14 @@
 <#--  include Content  -->
 <@layout.mainLayout ;section>
 <#if section = "content">
-    <h2>Persoonlijke identificatie</h2>
+    <h2>Registratie - stap 1/3</h2>
     <#if message?has_content>
         <div class="alert alert-${message.type}">
             <span class="kc-feedback-text">${message.summary?no_esc}</span>
         </div>
     </#if>
+
+    <h3>Persoonlijke identificatie</h3>
     <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
         <input id="firstname" name="firstname" class="input-field" type="text" autofocus placeholder="Voornaam" value="${(formData.firstname[0])!''}"/>
         <input id="lastname" name="lastname" class="input-field" type="text" autofocus placeholder="Achternaam" value="${(formData.lastname[0])!''}" />

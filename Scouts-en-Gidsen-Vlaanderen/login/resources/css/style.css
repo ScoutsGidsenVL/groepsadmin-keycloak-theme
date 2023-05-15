@@ -38,7 +38,6 @@ body {
   .login-form {
     padding: 60px 0;
     flex-direction: row;
-    align-items: stretch;
     justify-content: center;
   }
 }
@@ -73,6 +72,10 @@ h2 {
   color: var(--primary);
 }
 
+h3 {
+  color: var(--primary);
+}
+
 a {
   text-decoration: none;
   color: var(--primary);
@@ -83,8 +86,9 @@ a:hover, a:focus {
 }
 
 .alert {
-  margin: 5px auto;
+  margin: 0 auto;
   text-align: center;
+  padding-bottom: 16px;
 }
 
 .alert-succes {
@@ -181,6 +185,10 @@ form > .btn {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+}
+
+.user-actions > * {
+  display: block;
 }
 
 .user-actions > *:not(:last-child) {
