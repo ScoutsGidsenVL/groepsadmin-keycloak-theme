@@ -9,8 +9,10 @@
   --primary: #7b8f1c;
   --on-primary: #ffffff;
   --secondary: #f4f5d4;
+  --on-secondary: #495057;
   --border: #ced4da;
-  --card-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);;
+  --placeholder: #8c9094;
+  --card-shadow: 0 2px 1px -1px rgba(50,50,50,.2), 0 1px 1px 0 rgba(50,50,50,.14), 0 1px 3px 0 rgba(50,50,50,.12);
 }
 
 body {
@@ -101,6 +103,8 @@ a:hover, a:focus {
   color: #00507e
 }
 
+/* FORMS */
+
 .input-field {
   font-size: 1rem;
   color: var(--on-background);
@@ -114,7 +118,7 @@ a:hover, a:focus {
 }
 
 .input-field::-webkit-input-placeholder {
-  color: #B7B7B7;
+  color: var(--placeholder);
 }
 
 .input-field:hover, .input-field:focus {
@@ -138,8 +142,7 @@ a:hover, a:focus {
 }
 
 .btn {
-  display: block;
-  margin: 15px auto 0;
+  display: inline-block;
   padding: 8px 16px;
   background-color: var(--primary);
   color: var(--on-primary);
@@ -155,6 +158,17 @@ a:hover, a:focus {
 .btn:focus, .btn:hover {
   cursor: pointer;
   transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.btn.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+
+form > .btn {
+  display: block;
+  margin: 15px auto 0;
 }
 
 .input-checkbox {
@@ -163,19 +177,17 @@ a:hover, a:focus {
 }
 
 .user-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
-  width: 100%;
-  text-align: center;
-}
-
-.user-actions > * {
-  display: block;
-  width: 100%;
 }
 
 .user-actions > *:not(:last-child) {
   margin-bottom: 11px;
 }
+
+/* MODAL */
 
 .modal {
   display: none;
@@ -225,6 +237,8 @@ b {
 .g-recaptcha {
   display: inline-block;
 }
+
+/* FOOTER */
 
 .footer {
   font-family: 'museo_sans500',Avenir,Helvetica,Arial,sans-serif !important;

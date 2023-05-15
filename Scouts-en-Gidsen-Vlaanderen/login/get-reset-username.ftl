@@ -22,12 +22,12 @@
 
       <div class="user-actions">
         <#if client??>
-          <a href="${url.loginUrl}">Inloggen</a>
+          <a class="btn btn-secondary" href="${url.loginUrl}">Inloggen</a>
         </#if>
         <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
-          <a id="registration" href="${url.registrationUrl}">Registreren</a>
+          <a class="btn btn-secondary" id="registration" href="${url.registrationUrl}">Registreren</a>
         <#else>
-          <a id="registration" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/gebruiker-aanmaken">Registreren</a>
+          <a class="btn btn-secondary" id="registration" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/gebruiker-aanmaken">Registreren</a>
         </#if>
       </div>
     </#if>
