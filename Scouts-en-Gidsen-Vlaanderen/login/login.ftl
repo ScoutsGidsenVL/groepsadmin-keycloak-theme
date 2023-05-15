@@ -15,16 +15,16 @@
     <input class="input-field" id="username" name="username" value="${(login.username!'')}" type="text" autofocus placeholder="Gebruikersnaam of lidnummer" tabindex="1" />
     <#if realm.resetPasswordAllowed>
       <div class="input-subtext">
-        <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=getusername">Gebruikersnaam vergeten?</a>
+        <a href="${url.loginResetCredentialsUrl}&action=getusername">Gebruikersnaam vergeten?</a>
       </div>
     </#if>
 
     <input class="input-field password" id="password" name="password" type="password" autocomplete="off" placeholder="Wachtwoord" tabindex="2"/>
     <div class="input-subtext">
       <#if realm.resetPasswordAllowed>
-        <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=resetpassword">Wachtwoord vergeten?</a>
+        <a href="${url.loginResetCredentialsUrl}&action=resetpassword">Wachtwoord vergeten?</a>
       <#else>
-        <a id="loginResetCredentials" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/nieuw-paswoord.jsp">Wachtwoord vergeten?</a>
+        <a href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/nieuw-paswoord.jsp">Wachtwoord vergeten?</a>
       </#if>
     </div>
 
