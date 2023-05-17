@@ -11,9 +11,9 @@
         </div>
       </#if>
       <form id="kc-form-login" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
-        <input id="firstname" name="firstname" class="input-field" type="text" autofocus placeholder="Voornaam" value="${(formData.firstname[0])!''}"/>
-        <input id="lastmame" name="lastname" class="input-field" type="text" autofocus placeholder="Achternaam" value="${(formData.lastname[0])!''}" />
-        <input id="email" name="email" class="input-field" type="text" autofocus placeholder="E-mail of gsm-nummer" value="${(formData.email[0])!''}" />
+        <input class="input-field" id="firstname" name="firstname" type="text" autofocus placeholder="Voornaam" value="${(formData.firstname[0])!''}"/>
+        <input class="input-field" id="lastmame" name="lastname" type="text" autofocus placeholder="Achternaam" value="${(formData.lastname[0])!''}" />
+        <input class="input-field" id="email" name="email" type="text" autofocus placeholder="E-mail of gsm-nummer" value="${(formData.email[0])!''}" />
         <input id="action" name="action" type= "hidden" value="getUsername"/>
         <button class="btn">
           Gebruikersnaam opvragen
@@ -22,12 +22,7 @@
 
       <div class="user-actions">
         <#if client??>
-          <a class="btn btn-secondary" href="${url.loginUrl}">Inloggen</a>
-        </#if>
-        <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
-          <a class="btn btn-secondary" id="registration" href="${url.registrationUrl}">Registreren</a>
-        <#else>
-          <a class="btn btn-secondary" id="registration" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/gebruiker-aanmaken">Registreren</a>
+          <a class="btn btn-secondary" href="${url.loginUrl}">Terug naar inloggen</a>
         </#if>
       </div>
     </#if>
