@@ -117,6 +117,28 @@ a:hover, a:focus {
   border-color: var(--primary);
 }
 
+.input-group {
+  position: relative;
+  margin-top: 12px;
+}
+
+.input-group > .input-field {
+  margin-top: 0;
+  padding-right: 38px;
+}
+
+.input-group > .password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("../img/eye.svg") center/contain no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
 .input-subtext {
   color: var(--primary);
   margin-top: 6px;

@@ -19,7 +19,10 @@
       </div>
     </#if>
 
-    <input class="input-field password" id="password" name="password" type="password" autocomplete="off" placeholder="Wachtwoord" tabindex="2"/>
+    <div class="input-group">
+      <input class="input-field password" id="password" name="password" type="password" autocomplete="off" placeholder="Wachtwoord" tabindex="2"/>
+      <button class="password-toggle" type="button" title="Toon wachtwoord"></button>
+    </div>
     <div class="input-subtext">
       <#if realm.resetPasswordAllowed>
         <a id="loginResetCredentials" href="${url.loginResetCredentialsUrl}&action=resetpassword">Wachtwoord vergeten?</a>
