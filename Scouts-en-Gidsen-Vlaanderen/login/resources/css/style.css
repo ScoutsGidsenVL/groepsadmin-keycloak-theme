@@ -336,7 +336,7 @@ b {
 
 .footer-contact-block {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .footer-contact-logo {
@@ -344,6 +344,8 @@ b {
   max-width: 75px;
   height: 110px;
   margin-right: 2em;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 390px) {
@@ -352,10 +354,9 @@ b {
   }
 }
 
-.footer-contact-logo svg {
-  fill: #fff;
-  margin-top: -0.5rem;
-  overflow: hidden;
+.footer-contact-logo i {
+  color: #fff;
+  font-size: 100px;
   vertical-align: middle;
 }
 
