@@ -8,8 +8,6 @@
   --surface: #ffffff;
   --primary: #7b8f1c;
   --on-primary: #ffffff;
-  --secondary: #f4f5d4;
-  --on-secondary: #495057;
   --border: #ced4da;
   --placeholder: #8c9094;
   --card-shadow: 0 2px 1px -1px rgba(50,50,50,.2), 0 1px 1px 0 rgba(50,50,50,.14), 0 1px 3px 0 rgba(50,50,50,.12);
@@ -175,13 +173,6 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-.btn.btn-secondary {
-  background-color: var(--secondary);
-  color: var(--on-secondary);
-  padding: 6px 12px;
-  font-size: 17px;
-}
-
 form > .btn {
   display: block;
   margin: 20px auto 0;
@@ -205,6 +196,10 @@ form > .btn {
 
 .user-actions > *:not(:last-child) {
   margin-bottom: 11px;
+}
+
+.user-actions a {
+  text-decoration: underline;
 }
 
 /* MODAL */

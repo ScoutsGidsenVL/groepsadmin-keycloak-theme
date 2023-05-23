@@ -50,9 +50,9 @@
   <div class="user-actions">
     <span>Nog geen account?
     <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
-      <a class="btn btn-secondary" id="registration" href="${url.registrationUrl}">Registreren</a>
+      <a id="registration" href="${url.registrationUrl}">Registreren</a>
     <#else>
-      <a class="btn btn-secondary" id="registration" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/gebruiker-aanmaken">Registreren</a>
+      <a id="registration" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/gebruiker-aanmaken">Registreren</a>
     </#if>
     </span>
   </div>

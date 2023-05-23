@@ -32,7 +32,7 @@
 
     <div class="user-actions">
         <#if client??>
-            <span>Heb je al een account? <a class="btn btn-secondary" href="${url.loginUrl}">Inloggen</a></span>
+            <span>Heb je al een account? <a href="${url.loginUrl}">Inloggen</a></span>
         </#if>
     </div>
 
