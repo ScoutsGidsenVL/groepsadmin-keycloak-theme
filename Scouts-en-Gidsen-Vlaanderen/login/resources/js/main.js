@@ -2,7 +2,7 @@ document.querySelectorAll('.password-toggle').forEach(toggle => {
     const field = toggle.parentElement?.querySelector('.input-field');
     if (field === null) return;
     toggle.addEventListener('click', () => {
-        const show = field.getAttribute('type') == 'password';
+        const show = field.getAttribute('type') === 'password';
         field.setAttribute('type', show ? 'text' : 'password');
         field.focus()
         toggle.setAttribute('title', show ? 'Verberg wachtwoord' : 'Toon wachtwoord');
@@ -51,7 +51,7 @@ if (loginPrompt != null && clientId != null) {
     if (clientId === 'werkwinkeldatabank') {
         client = 'de Werkwinkeldatabank';
     }
-    if (client != undefined) {
+    if (client !== undefined) {
         loginPrompt.textContent = `Log in op ${client} met je Scouts en Gidsen Vlaanderen account`;
     }
 }
