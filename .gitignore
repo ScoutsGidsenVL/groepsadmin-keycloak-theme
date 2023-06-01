@@ -2,5 +2,5 @@
 /keycloak/
 /node_modules
 /bower_components
-/Scouts-en-Gidsen-Vlaanderen/login/resources/js/*.js
-!/Scouts-en-Gidsen-Vlaanderen/login/resources/js/main.js
+/Scouts-en-Gidsen-Vlaanderen/login/resources/js/cleave.min.js
+/Scouts-en-Gidsen-Vlaanderen/login/resources/js/cleave-phone.be.js
