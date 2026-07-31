@@ -3,7 +3,7 @@
 <#--  include Content  -->
 <@layout.mainLayout ;section>
 <#if section = "content">
-    <h2>Registratie - stap 1/3</h2>
+    <h2>Registratie - stap 1/2</h2>
     <#if message?has_content>
         <div class="alert alert-${message.type}">
             <span class="kc-feedback-text">${message.summary?no_esc}</span>
